@@ -43,16 +43,6 @@ function App() {
         <h1>Turning concepts into working systems.</h1>
         <p className="subtitle">Mechanical Engineering • Optical Systems • Research • Design • Fabrication</p>
         <a className="button" href="#projects">View Projects <ArrowRight size={18} /></a>
-      
-      <img 
-  src="/headshot.png" 
-  alt="Roger Bos professional headshot" 
-  className="hero-photo"
-      />
-      
-      
-      
-      
       </section>
 
       <section id="about" className="section gridTwo">
