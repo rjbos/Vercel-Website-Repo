@@ -115,7 +115,7 @@ a {
 
 h1 {
   max-width: 1030px;
-  font-size: clamp(4.4rem, 7.25vw, 8.8rem);
+  font-size: clamp(2.2rem, 7.25vw, 5.5rem);
   line-height: 1.06;
   letter-spacing: -0.075em;
   margin: 0;
