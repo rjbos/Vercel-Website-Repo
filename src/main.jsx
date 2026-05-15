@@ -55,14 +55,19 @@ function Home() {
         <div className="heroText">
           <p className="heroEyebrow">Engineering Portfolio</p>
 
-          <h1>
-            Turning concepts into<br />
-            working systems
-          </h1>
+         <h1>
+              Turning concepts into<br />
+              working systems
+        </h1>
 
-          <a className="button" href="#projects">
-            View Projects <ArrowRight size={26} />
-          </a>
+      <p className="heroSkills">
+          Mechanical Engineering <span>•</span> Optical Systems <span>•</span> Research <span>•</span><br />
+          Design <span>•</span> Fabrication
+      </p>
+
+        <a className="button" href="#projects">
+                View Projects <ArrowRight size={26} />
+        </a>
         </div>
 
         <div className="heroMedia">
@@ -73,10 +78,6 @@ function Home() {
             />
           </div>
 
-          <p className="heroSkills">
-            Mechanical Engineering <span>•</span> Optical Systems <span>•</span> Research <span>•</span><br />
-            Design <span>•</span> Fabrication
-          </p>
         </div>
       </section>
 
