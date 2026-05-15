@@ -31,10 +31,21 @@ a {
   border-bottom: 1px solid rgba(31, 41, 51, 0.08);
 }
 
-.logo {
+/*.logo {
   font-weight: 800;
   letter-spacing: -0.03em;
   font-size: 1.25rem;
+}*/
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
 }
 
 .navLinks {
