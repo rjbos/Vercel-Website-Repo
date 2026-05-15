@@ -163,14 +163,21 @@ h1 {
   padding: 90px 8%;
 }
 
+.aboutSection {
+  background: #edf5e9;
+  border-radius: 36px;
+  margin: 0 4%;
+  padding: 70px 4%; /* Light Green Background */
+}
+
 .gridTwo {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 56px;
   align-items: start;
-  background: #edf5e9;
+  /* background: #edf5e9;
   border-radius: 36px;
-  padding: 70px;
+  padding: 70px; */
   box-shadow: 0 18px 55px rgba(31, 41, 51, 0.05); /* Makes "About Me" section feel "Card Like" */
 }
 
