@@ -82,7 +82,6 @@ function App() {
       <section id="contact" className="section contact">
         <p className="eyebrow">Contact</p>
         <h2>Let’s connect.</h2>
-        <p>Use this section to add your email, LinkedIn, GitHub, resume, or project links.</p>
         <div className="contactLinks">
           <a href="mailto:rjbos2@gmail.com"><Mail size={18}/> Email</a>
           <a href="#"><Linkedin size={18}/> LinkedIn</a>
