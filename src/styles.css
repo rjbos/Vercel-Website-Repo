@@ -185,9 +185,7 @@ h1 {
 
 }
 
-.quoteContainer {
-  padding: 10px;
-}
+
 
 .features {
   padding-bottom: 20px;
@@ -209,7 +207,7 @@ h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   letter-spacing: -0.05em;
   line-height: 1;
-  margin: 0 0 18px;
+  margin: 0px 0 10px 10px;
 }
 
 .gridTwo p,
