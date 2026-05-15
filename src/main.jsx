@@ -86,25 +86,44 @@ function Home() {
         </div>
       </section>
 
-      <section id="about" className="section gridTwo">
-        <div>
-          <p className="eyebrow">About Me</p>
-          <h2>Designing practical engineering solutions through creativity, precision, and analysis.</h2>
-        </div>
-        <p>
-          This engineering portfolio showcases mechanical, electrical, mechatronics, and multidisciplinary
-          engineering projects I have completed or am currently developing. It includes optical system design,
-          spectroscopy research, CAD modeling, and hands-on fabrication experience. The portfolio highlights
-          my capstone work, technical presentations, problem-solving analysis, and innovative designs focused
-          on real-world engineering applications.
-        </p>
-      </section>
+<div className="aboutSection">
 
-      <section className="section features">
-        <div className="feature"><Wrench /><h3>Mechanical Design</h3><p>CAD, fabrication, prototyping, fixtures, and precision mechanical systems.</p></div>
-        <div className="feature"><Cpu /><h3>Mechatronics</h3><p>Integrated projects combining mechanical systems, electronics, sensors, and controls.</p></div>
-        <div className="feature"><Lightbulb /><h3>Optical Research</h3><p>Spectroscopy, optical system design, laser applications, and material characterization.</p></div>
-      </section>
+  <section id="about" className="section gridTwo">
+    <div>
+      <p className="eyebrow">About Me</p>
+      <h2>Designing practical engineering solutions through creativity, precision, and analysis.</h2>
+    </div>
+
+    <p>
+      This engineering portfolio showcases mechanical, electrical, mechatronics, and multidisciplinary
+      engineering projects I have completed or am currently developing. It includes optical system design,
+      spectroscopy research, CAD modeling, and hands-on fabrication experience. The portfolio highlights
+      my capstone work, technical presentations, problem-solving analysis, and innovative designs focused
+      on real-world engineering applications.
+    </p>
+  </section>
+
+  <section className="section features">
+    <div className="feature">
+      <Wrench />
+      <h3>Mechanical Design</h3>
+      <p>CAD, fabrication, prototyping, fixtures, and precision mechanical systems.</p>
+    </div>
+
+    <div className="feature">
+      <Cpu />
+      <h3>Mechatronics</h3>
+      <p>Integrated projects combining mechanical systems, electronics, sensors, and controls.</p>
+    </div>
+
+    <div className="feature">
+      <Lightbulb />
+      <h3>Optical Research</h3>
+      <p>Spectroscopy, optical system design, laser applications, and material characterization.</p>
+    </div>
+  </section>
+
+</div>
 
       <section id="projects" className="section">
         <p className="eyebrow">Selected Work</p>
