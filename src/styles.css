@@ -212,6 +212,10 @@ h2 {
 .contact {
   background: #1f2933;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
 }
 
 .contact p {
@@ -234,6 +238,30 @@ h2 {
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.resumeButton {
+  background: #3f7f46;
+  color: white;
+  padding: 18px 30px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+  transition: 0.2s ease;
+}
+
+.resumeButton:hover,
+.contactLinks a:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+  .contact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1100px) {
