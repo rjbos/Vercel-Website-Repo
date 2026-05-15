@@ -143,7 +143,7 @@ a {
 
 h1 {
   max-width: 1300px;
-  font-size: clamp(2.2rem, 6vw, 6.0rem); /* Title Size*/
+  font-size: clamp(2.4rem, 6vw, 6.2rem); /* Title Size*/
   line-height: 1.06;
   letter-spacing: -0.005em;
   margin: 0;
