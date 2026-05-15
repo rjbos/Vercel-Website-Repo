@@ -42,7 +42,7 @@ function App() {
   <div className="heroText">
     <p className="eyebrow">Engineering Portfolio</p>
 
-    <h1>Turning concepts into working systems.</h1>
+    <h1>Turning concepts into working systems</h1>
 
     <p className="subtitle">
       Mechanical Engineering • Optical Systems • Research • Design • Fabrication
