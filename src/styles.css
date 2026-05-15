@@ -161,7 +161,8 @@ h1 {
 }
 
 .section {
-  padding: 90px 8%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .aboutSection {
