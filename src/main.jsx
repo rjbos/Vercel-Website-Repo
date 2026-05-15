@@ -44,7 +44,11 @@ function Home() {
   return (
     <main>
       <nav className="nav">
-        <Link className="logo" to="/">Roger Bos</Link>
+
+      <Link className="logo" to="/">
+          <img src="/rb-logo.png" alt="Roger Bos Logo" />
+      </Link>
+        
         <div className="navLinks">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
