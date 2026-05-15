@@ -61,7 +61,7 @@ a {
 }
 
 .heroEyebrow {
-  font-size: clamp(1.35rem, 1.9vw, 1.8rem);
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
   letter-spacing: 0.3em;
   margin-bottom: 48px;
 }
