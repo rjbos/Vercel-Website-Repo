@@ -39,27 +39,33 @@ function App() {
       </nav>
 
       <section className="hero">
-  <div className="heroText">
-    <p className="eyebrow">Engineering Portfolio</p>
+        <div className="heroText">
+          <p className="eyebrow heroEyebrow">Engineering Portfolio</p>
 
-    <h1>Turning concepts into working systems</h1>
+          <h1>
+            Turning concepts into<br />
+            working systems
+          </h1>
 
-    <p className="subtitle">
-      Mechanical Engineering • Optical Systems • Research • Design • Fabrication
-    </p>
+          <a className="button" href="#projects">
+            View Projects <ArrowRight size={26} />
+          </a>
+        </div>
 
-    <a className="button" href="#projects">
-      View Projects <ArrowRight size={18} />
-    </a>
-  </div>
+        <div className="heroMedia">
+          <div className="heroImage">
+            <img
+              src="/headshot.png"
+              alt="Roger Bos Professional Headshot"
+            />
+          </div>
 
-  <div className="heroImage">
-    <img
-      src="/headshot.png"
-      alt="Roger Bos Professional Headshot"
-    />
-  </div>
-</section>
+          <p className="heroSkills">
+            Mechanical Engineering <span>•</span> Optical Systems <span>•</span> Research <span>•</span><br />
+            Design <span>•</span> Fabrication
+          </p>
+        </div>
+      </section>
 
       <section id="about" className="section gridTwo">
         <div>
