@@ -168,7 +168,11 @@ h1 {
   background: #edf5e9;
   border-radius: 36px;
   margin: 0 4%;
-  padding: 70px 4%; /* Light Green Background */
+  padding: 50px 4%; /* Light Green Background */
+}
+
+.features {
+  padding-bottom: 20px;
 }
 
 .gridTwo {
