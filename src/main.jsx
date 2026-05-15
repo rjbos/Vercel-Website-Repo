@@ -96,9 +96,9 @@ function Home() {
 
     <p>
       Every day is a new opportunity to learn, improve, and create something impactful. 
-      This quote, and this website itself, reflect that mindset. Every iteration, every 
+      This quote, and this website itself, reflects that mindset. Every iteration, every 
       attempt, and every prototype is one step closer to the final goal. I believe 
-      Engineering is a continuous process of refining ideas, solving problems, and turning 
+      engineering is a continuous process of refining ideas, solving problems, and turning 
       concepts into working systems.
     </p>
   </section>
