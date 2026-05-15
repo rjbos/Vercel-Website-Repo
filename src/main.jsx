@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'
 import { ArrowRight, Cpu, Wrench, Lightbulb, Mail, Linkedin, Github } from 'lucide-react'
 import './styles.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 
 const projects = [
@@ -200,6 +199,8 @@ function ProjectPage() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:slug" element={<ProjectPage />} />
@@ -208,13 +209,6 @@ function App() {
   )
 }
 
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <ScrollToTop />
+createRoot(document.getElementById('root')).render(<App />)
 
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/projects/:slug" element={<ProjectPage />} />
-    </Routes>
-  </BrowserRouter>
-)
+
