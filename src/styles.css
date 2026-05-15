@@ -82,6 +82,17 @@ a {
   font-weight: 800;
 }
 
+.heroEyebrow2 {
+  font-size: 1.25rem;
+  margin: 0px 0 5px 10px;
+  /*font-size: clamp(1.6rem, 2.2vw, 2.2rem);*/
+  letter-spacing: 0.10em; /*0.16*/
+  color: #3f7f46;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
 .heroMedia {
   display: flex;
   flex-direction: column;
