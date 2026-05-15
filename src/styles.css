@@ -165,6 +165,18 @@ h1 {
   padding-bottom: 20px;
 }
 
+#projects {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#contact {
+  margin: 0 4%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border-radius: 36px 36px 0 0;
+}
+
 .aboutSection {
   background: #edf5e9;
   border-radius: 36px;
