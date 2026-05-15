@@ -115,15 +115,22 @@ function Home() {
         </div>
       </section>
 
-      <section id="contact" className="section contact">
-        <p className="eyebrow">Contact</p>
-        <h2>Let’s connect.</h2>
-        <div className="contactLinks">
-          <a href="mailto:rjbos2@gmail.com"><Mail size={18}/> Email</a>
-          <a href="#"><Linkedin size={18}/> LinkedIn</a>
-          <a href="#"><Github size={18}/> GitHub</a>
-        </div>
-      </section>
+<section id="contact" className="section contact">
+  <div>
+    <p className="eyebrow">Contact</p>
+    <h2>Let’s connect.</h2>
+
+    <div className="contactLinks">
+      <a href="mailto:rjbos2@gmail.com"><Mail size={18}/> Email</a>
+      <a href="https://www.linkedin.com/in/roger-bos-439060274/" target="_blank" rel="noreferrer"><Linkedin size={18}/> LinkedIn</a>
+      <a href="https://github.com/rjbos" target="_blank" rel="noreferrer"><Github size={18}/> GitHub</a>
+    </div>
+  </div>
+
+  <a className="resumeButton" href="/Roger-Bos-Resume.pdf" download>
+    Resume
+  </a>
+</section>
     </main>
   )
 }
