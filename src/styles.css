@@ -168,6 +168,10 @@ h1 {
   grid-template-columns: 1fr 1.2fr;
   gap: 56px;
   align-items: start;
+  background: #edf5e9;
+  border-radius: 36px;
+  padding: 70px;
+  box-shadow: 0 18px 55px rgba(31, 41, 51, 0.05); /* Makes "About Me" section feel "Card Like" */
 }
 
 h2 {
