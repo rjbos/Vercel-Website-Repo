@@ -155,7 +155,7 @@ h1 {
   border-radius: 999px;
   font-size: clamp(1.1rem, 1.35vw, 1.45rem);
   font-weight: 800;
-  margin-top: 92px;
+  margin-top: 40px; /* Attemplt at altering Button Gap (92) */
   box-shadow: 0 18px 45px rgba(63, 127, 70, 0.26);
 }
 
