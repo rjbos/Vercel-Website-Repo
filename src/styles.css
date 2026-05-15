@@ -56,6 +56,12 @@ a {
 } */
 
 .hero {
+  padding: 80px 8%;
+  background:
+    linear-gradient(rgba(245, 247, 244, 0.72), rgba(245, 247, 244, 0.94)),
+    radial-gradient(circle at top right, #b9d8b2, transparent 34%),
+    radial-gradient(circle at bottom left, #d7e8d1, transparent 32%);
+  
   min-height: 82vh;
   display: flex;
   align-items: center;
