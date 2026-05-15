@@ -90,7 +90,7 @@ function Home() {
 
   <section id="about" className="section gridTwo">
     <div>
-      <p className="eyebrow">About Me</p>
+      <p className="eyebrow">Engineering Principle</p>
       <h2>"Progress is built one iteration at a time"</h2>
     </div>
 
