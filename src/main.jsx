@@ -53,7 +53,7 @@ function Home() {
 
       <section className="hero">
         <div className="heroText">
-          <p className="eyebrow heroEyebrow">Engineering Portfolio</p>
+          <p className="heroEyebrow">Engineering Portfolio</p>
 
           <h1>
             Turning concepts into<br />
