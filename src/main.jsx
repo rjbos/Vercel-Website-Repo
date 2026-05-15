@@ -61,7 +61,8 @@ function Home() {
           <p className="heroEyebrow">Engineering Portfolio</p>
 
          <h1>
-              Turning concepts into<br />
+              Turning <br />
+              concepts into<br />
               working systems
         </h1>
 
