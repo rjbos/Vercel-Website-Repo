@@ -91,15 +91,15 @@ function Home() {
   <section id="about" className="section gridTwo">
     <div>
       <p className="eyebrow">About Me</p>
-      <h2>Designing practical engineering solutions through creativity, precision, and analysis.</h2>
+      <h2>"Progress is built one iteration at a time"</h2>
     </div>
 
     <p>
-      This engineering portfolio showcases mechanical, electrical, mechatronics, and multidisciplinary
-      engineering projects I have completed or am currently developing. It includes optical system design,
-      spectroscopy research, CAD modeling, and hands-on fabrication experience. The portfolio highlights
-      my capstone work, technical presentations, problem-solving analysis, and innovative designs focused
-      on real-world engineering applications.
+      Every day is a new opportunity to learn, improve, and create something impactful. 
+      This quote, and this website itself, reflect that mindset. Every iteration, every 
+      attempt, and every prototype is one step closer to the final goal. I believe 
+      Engineering is a continuous process of refining ideas, solving problems, and turning 
+      concepts into working systems.
     </p>
   </section>
 
