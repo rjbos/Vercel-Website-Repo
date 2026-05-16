@@ -106,20 +106,28 @@ function Home() {
 
   <section className="section features">
     <div className="feature">
-      <Wrench />
+      <div className="featureHeader">
+      <Wrench  />
       <h3>Mechanical Design</h3>
-      <p>CAD, fabrication, prototyping, fixtures, and precision mechanical systems.</p>
+      </div>
+      <p>CAD modeling, 3D printing, prototyping, fabricating, creating fixtures, perfoming FMEA, 
+        designing precision mechanical system development using SolidWorks and hands-on 
+        engineering analysis.</p>
     </div>
 
     <div className="feature">
-      <Cpu />
-      <h3>Mechatronics</h3>
+      <div className="featureHeader">
+        <Cpu />
+        <h3>Mechatronics</h3>
+      </div>
       <p>Integrated projects combining mechanical systems, electronics, sensors, and controls.</p>
     </div>
 
     <div className="feature">
-      <Lightbulb />
-      <h3>Optical Research</h3>
+      <div className="featureHeader">
+        <Lightbulb />
+        <h3>Optical Research</h3>
+      </div>
       <p>Spectroscopy, optical system design, laser applications, and material characterization.</p>
     </div>
   </section>

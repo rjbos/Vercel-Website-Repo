@@ -271,8 +271,13 @@ h2 {
   padding: 10px;
 
   border-radius: 16px;
+}
 
-  margin-bottom: 24px;
+.featureHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
 .feature::before {
