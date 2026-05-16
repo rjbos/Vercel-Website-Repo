@@ -118,9 +118,10 @@ function Home() {
     <div className="feature">
       <div className="featureHeader">
         <Cpu />
-        <h3>Mechatronics</h3>
+        <h3>Mechatronics & Robotics</h3>
       </div>
-      <p>Integrated projects combining mechanical systems, electronics, sensors, and controls.</p>
+      <p>Embedded systems, robotics, sensors, controls, automation, and integrated projects 
+        combining mechanical, electrical, and software-driven engineering systems.</p>
     </div>
 
     <div className="feature">
