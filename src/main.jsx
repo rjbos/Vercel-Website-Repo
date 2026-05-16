@@ -111,7 +111,7 @@ function Home() {
       <h3>Mechanical Design</h3>
       </div>
       <p>CAD modeling, 3D printing, prototyping, fabricating, creating fixtures, perfoming FMEA, 
-        designing precision mechanical system development using SolidWorks and hands-on 
+        designing precision mechanical systems, using SolidWorks/Fusion 360 and hands-on 
         engineering analysis.</p>
     </div>
 
