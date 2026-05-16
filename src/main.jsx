@@ -112,7 +112,7 @@ function Home() {
       </div>
       <p>CAD modeling, 3D printing, prototyping, fabricating, creating fixtures, perfoming FMEA, 
         designing precision mechanical systems, using SolidWorks/Fusion 360 and hands-on 
-        engineering analysis.</p>
+        engineering.</p>
     </div>
 
     <div className="feature">
