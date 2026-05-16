@@ -68,7 +68,7 @@ function Home() {
 
       <p className="heroSkills">
           Mechanical Engineering <span>•</span> Optical Systems <span>•</span> Research <span>•</span><br />
-          Design <span>•</span> Fabrication
+          Design <span>•</span> Fabrication <span>•</span> Mechatronics <span>•</span> Robotics
       </p>
 
         <a className="button" href="#projects">
