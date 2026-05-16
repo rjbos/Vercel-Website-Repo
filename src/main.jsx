@@ -127,9 +127,10 @@ function Home() {
     <div className="feature">
       <div className="featureHeader">
         <Lightbulb />
-        <h3>Optical Research</h3>
+        <h3>Photonics Research</h3>
       </div>
-      <p>Spectroscopy, optical system design, laser applications, and material characterization.</p>
+      <p>Spectroscopy, optical system design, laser applications, material characterization, 
+        and rare-earth optical research focused on visible and mid-infrared systems.</p>
     </div>
   </section>
 
