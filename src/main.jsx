@@ -13,7 +13,7 @@ const cryostatProject = {
   image: '/Group_photo.jpeg',
   imageAlt: 'Capstone team presenting the completed modular optical rail mount for cryostat integration',
   description:
-    'A senior mechanical engineering capstone project that transformed an unused ARL cryostat into a mobile, adjustable spectroscopy research platform.',
+    'Capstone mechanical engineering project that transformed an unused ARL cryostat into a mobile, 3-dimensional spectroscopy research platform.',
   details:
     'Designed and built a modular optical rail mounting system capable of supporting an ARL cryostat while providing controlled X, Y, and Z positioning for use with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
   stats: [
@@ -337,6 +337,10 @@ function CryostatProjectPage({ project }) {
         </div>
         <div className="projectHeroImage projectHeroPhoto">
           <img src={project.image} alt={project.imageAlt} />
+            <p className="Group_Project_imageCaption">
+             Capstone team presented above:
+             Left to Right: Roger Bos, John Shaffer, Alain Juneau, & Ben Carlson.
+           </p>
         </div>
       </section>
 
