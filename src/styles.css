@@ -653,7 +653,7 @@ h2 {
 }
 
 .projectBulletList {
-  margin: 15px 0 0;   /* Bullet List Gap = 26px */
+  margin: 26px 0 0;   /* Bullet List Gap = 26px */
   padding-left: 22px;
   color: #52616b;
   line-height: 1.75;
@@ -662,6 +662,7 @@ h2 {
 
 .projectBulletList li + li {
   margin-top: 8px;
+  padding-bottom: 0;
 }
 
 .statGrid {
