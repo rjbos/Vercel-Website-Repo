@@ -515,7 +515,8 @@ h2 {
 
 .projectHeroImage img {
   align-self: start;
-  padding-top: 10px;       /* Capstone Proj. Image */
+  padding-top: 0px;       /* Capstone Proj. Image */
+  margin-top: -20px; /* Attempt at fixing Capstone Proj. Image Gap */
   width: 100%;
   aspect-ratio: 1.22 / 1;
   object-fit: cover;
