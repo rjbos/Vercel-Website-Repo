@@ -503,7 +503,7 @@ h2 {
 }
 
 .projectHeroText h1 {
-  font-size: clamp(2.7rem, 5vw, 5rem); /* Project Title Font Size */
+  font-size: clamp(0.7rem, 5vw, 1rem); /* Project Title Font Size */
   max-width: 1050px;
 }
 
@@ -576,7 +576,7 @@ h2 {
   position: relative;
   width: 100%;
   aspect-ratio: 1.75 / 1;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 26px 26px 0 0;
   background: #dce6d7;
 }
