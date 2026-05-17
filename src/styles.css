@@ -503,7 +503,7 @@ h2 {
 }
 
 .projectHeroText h1 {
-  font-size: clamp(0.7rem, 5vw, 1rem); /* Project Title Font Size */
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Project Title Font Size */
   max-width: 1050px;
 }
 
@@ -512,7 +512,7 @@ h2 {
   font-size: clamp(1.1rem, 1.7vw, 1.35rem);
   line-height: 1.7;
   color: #52616b;
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .projectHeroImage img {
