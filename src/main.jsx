@@ -15,12 +15,13 @@ const cryostatProject = {
   description:
     'Mechanical engineering capstone project that transformed an unused ARL cryostat into a mobile, 3-dimensional spectroscopy research platform.',
   details:
-    'Designed and built a modular optical rail mounting system capable of supporting an ARL cryostat while providing controlled X, Y, and Z positioning for use with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
-  stats: [
-    { label: 'Budget', value: '< $5,000' },
-    { label: 'Cryostat Value', value: '$80,000' },
+      'Designed and built a modular, adjustable cryostat mounting system that enables precise, stable, and repeatable positioning for 3 axises. This allows ARL to fully utilize its existing cryostat by taking temperature-dependent tests with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
+
+      stats: [
+    { label: 'Budget', value: '$5,000' },
     { label: 'Motion Control', value: 'X / Y / Z' },
-    { label: 'Design Target', value: 'FoS 2.5' },
+    { label: 'Operational lifetime', value: '6+ Years' },
+    { label: 'Center of Gravity', value: '<1/2 Height' },
   ],
   quickBullets: [
     'Designed for temperature-dependent absorbance, emission, and fluorescence testing.',
@@ -346,7 +347,7 @@ function CryostatProjectPage({ project }) {
       <section className="section projectIntroGrid">
         <div>
           <p className="eyebrow">Project Overview</p>
-          <h2>Purpose, process, and engineering value.</h2>
+          <h2>Purpose, process, and Overall Design Goal</h2>
           <p className="leadText">{project.details}</p>
         </div>
         <div className="detailCard">
