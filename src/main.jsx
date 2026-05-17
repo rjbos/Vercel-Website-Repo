@@ -23,12 +23,12 @@ const cryostatProject = {
     { label: 'Operational lifetime', value: '> 6 Years' },
     { label: 'Center of Gravity', value: '<1/2 Height' },
   ],
-  quickBullets: [
-    'Designed for temperature-dependent absorbance, emission, and fluorescence testing.',
-    'Built around a battery-powered mobile lift cart for transport and coarse Z-axis adjustment.',
-    'Used T-slot framing, linear stages, Thorlabs hardware, and machined aluminum interface plates.',
-    'Validated the cantilevered support with SolidWorks analysis and hand calculations.',
-  ],
+  // quickBullets: [
+  //   'Designed for temperature-dependent absorbance, emission, and fluorescence testing.',
+  //   'Built around a battery-powered mobile lift cart for transport and coarse Z-axis adjustment.',
+  //   'Used T-slot framing, linear stages, Thorlabs hardware, and machined aluminum interface plates.',
+  //   'Validated the cantilevered support with SolidWorks analysis and hand calculations.',
+  // ],
   designEvolution: [
     {
       src: '/Concept_Sketch.png',
