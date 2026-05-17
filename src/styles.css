@@ -501,7 +501,7 @@ h2 {
 }
 
 .projectHeroText h1 {
-  font-size: clamp(3.2rem, 6vw, 6.8rem);
+  font-size: clamp(3rem, 5.4vw, 5.8rem);
   max-width: 1050px;
 }
 
@@ -514,6 +514,8 @@ h2 {
 }
 
 .projectHeroImage img {
+  align-self: start;
+  padding-top: 10px;       /* Capstone Proj. Image */
   width: 100%;
   aspect-ratio: 1.22 / 1;
   object-fit: cover;
