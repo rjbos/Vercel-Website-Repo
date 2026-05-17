@@ -338,7 +338,6 @@ function CryostatProjectPage({ project }) {
         <div className="projectHeroImage projectHeroPhoto">
           <img src={project.image} alt={project.imageAlt} />
             <p className="Group_Project_imageCaption">
-             Capstone team presented above:
              Left to Right: Roger Bos, John Shaffer, Alain Juneau, & Ben Carlson.
            </p>
         </div>
