@@ -19,7 +19,7 @@ const cryostatProject = {
 
       stats: [
     { label: 'Budget', value: '$5,000' },
-    { label: 'Motion Control', value: 'X / Y / Z' },
+    { label: 'Motion Control (Fine & Coarse)', value: 'X / Y / Z' },
     { label: 'Operational lifetime', value: '6+ Years' },
     { label: 'Center of Gravity', value: '<1/2 Height' },
   ],
