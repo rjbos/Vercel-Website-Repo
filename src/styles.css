@@ -503,7 +503,7 @@ h2 {
 }
 
 .projectHeroText h1 {
-  font-size: clamp(3rem, 5.4vw, 5.8rem);
+  font-size: clamp(2.7rem, 5vw, 5rem); /* Project Title Font Size */
   max-width: 1050px;
 }
 
@@ -521,7 +521,7 @@ h2 {
   margin-top: -50px; /* Attempt at fixing Capstone Proj. Image Gap */
   width: 100%;
   aspect-ratio: 1.22 / 1;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 34px;
   box-shadow: 0 22px 70px rgba(31, 41, 51, 0.16);
 }
