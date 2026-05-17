@@ -653,11 +653,12 @@ h2 {
 }
 
 .projectBulletList {
-  margin: 26px 0 0;   /* Bullet List Gap = 26px */
+  margin: 15px 0 0;   /* Bullet List Gap = 26px */
   padding-left: 22px;
   color: #52616b;
   line-height: 1.75;
   font-size: 1.03rem;
+  padding-bottom: 0;
 }
 
 .projectBulletList li + li {
