@@ -30,7 +30,7 @@ const cryostatProject = {
   ],
   designEvolution: [
     {
-      src: '/Roger_Concept_Sketch.png',
+      src: '/Concept_Sketch.png',
       title: 'Initial Concept Sketch',
       caption:
         'This early concept communicated the major architecture: a powered scissor-lift style cart for coarse vertical positioning, extendable rail support, and the cryostat mounted upside down so the optical opening could interface with spectroscopy equipment.',
