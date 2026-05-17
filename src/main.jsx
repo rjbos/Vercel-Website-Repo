@@ -248,7 +248,7 @@ function Home() {
       </div>
 
       <section id="projects" className="section">
-        <p className="eyebrow">Selected Work</p>
+        {/* <p className="eyebrow">Selected Work</p> */}
         <h2>Projects</h2>
         <div className="projectGrid">
           {projects.map((project) => (
