@@ -13,7 +13,7 @@ const cryostatProject = {
   image: '/Group_photo.jpeg',
   imageAlt: 'Capstone team presenting the completed modular optical rail mount for cryostat integration',
   description:
-    'Capstone mechanical engineering project that transformed an unused ARL cryostat into a mobile, 3-dimensional spectroscopy research platform.',
+    'Mechanical engineering capstone project that transformed an unused ARL cryostat into a mobile, 3-dimensional spectroscopy research platform.',
   details:
     'Designed and built a modular optical rail mounting system capable of supporting an ARL cryostat while providing controlled X, Y, and Z positioning for use with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
   stats: [
