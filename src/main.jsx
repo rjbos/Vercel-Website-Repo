@@ -18,9 +18,9 @@ const cryostatProject = {
       'Designed and built a modular, adjustable cryostat mounting system that enables precise, stable, and repeatable positioning for 3 axises. This allows ARL to fully utilize its existing cryostat by taking temperature-dependent tests with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
 
       stats: [
-    { label: 'Budget', value: '$5,000' },
+    { label: 'Budget', value: '< $5,000' },
     { label: 'Motion Control (Fine & Coarse)', value: 'X / Y / Z' },
-    { label: 'Operational lifetime', value: '6+ Years' },
+    { label: 'Operational lifetime', value: '> 6 Years' },
     { label: 'Center of Gravity', value: '<1/2 Height' },
   ],
   quickBullets: [
