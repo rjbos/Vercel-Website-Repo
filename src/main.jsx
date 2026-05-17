@@ -327,7 +327,7 @@ function CryostatProjectPage({ project }) {
 
       <section className={`projectHero projectHeroLarge ${project.accent}`}>
         <div className="projectHeroText">
-          <p className="eyebrow">{project.type}</p>
+          {/* <p className="eyebrow">{project.type}</p> */}
           <h1>{project.title}</h1>
           <p>{project.description}</p>
           <div className="projectHeroActions">
