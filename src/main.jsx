@@ -15,7 +15,7 @@ const cryostatProject = {
   description:
     'Mechanical engineering capstone project that transformed an unused ARL cryostat into a mobile, 3-dimensional spectroscopy research platform.',
   details:
-      'Designed and built a modular, adjustable cryostat mounting system that enables precise, stable, and repeatable positioning for 3 axises. This allows ARL to fully utilize its existing cryostat by taking temperature-dependent tests with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
+      'Designed and built a modular, adjustable cryostat mounting system that enables precise, stable, and repeatable positioning for 3 axes. This allows ARL to fully utilize its existing cryostat by taking temperature-dependent tests with the spectrophotometer, Fluorolog, FTIR, and future lab instruments.',
 
       stats: [
     { label: 'Budget', value: '< $5,000' },
