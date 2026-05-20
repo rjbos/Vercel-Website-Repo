@@ -594,15 +594,35 @@ function MechatronicsProjectPage({ project }) {
             The purpose of this page is to present the work as an engineering progression rather than a list of class assignments: starting with basic I/O and timing, moving into motor control and communication, and ending with a physical electromechanical automation system.
           </p>
         </div>
-        <div className="detailCard">
-          <div className="statGrid">
+        <div className="detailCard"> /*Right Here*/
+
+        <div className="mechatronicsOverviewImage">
+         <div className="mechatronicsImageShader"></div>
+
+  <img
+    src="/Arduino_Pi_Embedded_Systems.png"
+    alt="Arduino Uno and Raspberry Pi embedded systems setup"
+  />
+
+         <div className="mechatronicsOverviewOverlay">
+           <h3>Arduino + Raspberry Pi</h3>
+
+             <p>
+                 Embedded systems prototyping, hardware interfacing,
+                 wiring, and electronics experimentation using Arduino
+                 Uno microcontrollers and Raspberry Pi systems.
+             </p>
+          </div>
+          </div>
+
+          {/* <div className="statGrid">
             {project.stats.map((stat) => (
               <div className="statCard" key={stat.label}>
                 <strong>{stat.value}</strong>
                 <span>{stat.label}</span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
