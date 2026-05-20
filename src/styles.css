@@ -811,3 +811,85 @@ h2 {
     justify-content: center;
   }
 }
+
+/* =========================
+   Mechatronics Project Page
+   ========================= */
+.mechatronicsHeroPhoto img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.skillPillGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.skillPill {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(180, 106, 54, 0.18);
+  color: #1f2933;
+  font-weight: 850;
+  box-shadow: 0 10px 28px rgba(31, 41, 51, 0.05);
+}
+
+.inlineTextLink {
+  color: #3f7f46;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.labCardGrid,
+.finalProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.labCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(63, 127, 70, 0.13);
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow:
+    0 12px 30px rgba(31, 41, 51, 0.05),
+    0 24px 70px rgba(31, 41, 51, 0.08);
+}
+
+.labCard h3 {
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+  color: #1f2933;
+}
+
+.labCard p {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.72;
+  color: #52616b;
+}
+
+.finalProjectCard {
+  border-top: 6px solid #b46a36;
+}
+
+@media (max-width: 900px) {
+  .labCardGrid,
+  .finalProjectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mechatronicsHeroPhoto img {
+  margin-top: 0;
+}

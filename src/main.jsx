@@ -135,9 +135,125 @@ const projects = [
     image: '/Mechatronics_Labs_Final_Project.png',
     imageAlt: 'Mechatronics labs and final project title card showing Arduino wiring, breadboard LEDs, motor hardware, and code',
     description:
-      'Integrated mechanical, electrical, and programming labs using Arduino, sensors, motors, LEDs, and control logic to create working mechatronic systems.',
+      'Embedded systems, motor control, sensors, displays, and electromechanical automation built through hands-on Arduino and Raspberry Pi projects.',
     details:
-      'This project page will document hands-on mechatronics labs and the final project, showing how electrical components, mechanical hardware, and code were integrated into working test setups.',
+      'This project collection documents hands-on mechatronics laboratories and a final electromechanical automation project using Arduino Uno microcontrollers, embedded C/C++ programming, breadboard prototyping, sensors, displays, DC motors, stepper motors, PWM control, serial communication, solenoid actuation, and hardware/software debugging.',
+    stats: [
+      { label: 'Platform Experience', value: 'Arduino + Pi' },
+      { label: 'Lab Progression', value: '12 Labs' },
+      { label: 'Final Project', value: '8 Solenoids' },
+      { label: 'Core Focus', value: 'Controls' },
+    ],
+    skills: [
+      'Arduino Uno',
+      'Arduino IDE',
+      'Embedded C/C++',
+      'Raspberry Pi',
+      'PWM Control',
+      'Analog/Digital I/O',
+      'DC Motors',
+      'Stepper Motors',
+      'L293D Motor Drivers',
+      'Interrupts',
+      'Serial Communication',
+      '74HC595 Shift Registers',
+      'Seven-Segment Displays',
+      'LCD Displays',
+      'DHT11 Sensors',
+      'Solenoid Actuation',
+      'Circuit Debugging',
+      'Breadboard Prototyping',
+    ],
+    featuredLabs: [
+      {
+        title: 'LED Sequencing, PWM, and Analog Input',
+        caption:
+          'Built the foundation for embedded control by programming LED blink patterns, Knight Rider effects, RGB color patterns, smooth PWM breathing effects, randomized outputs, potentiometer input, and buzzer frequency control. These labs developed timing control, digital output, analog input, PWM, and basic signal generation skills.',
+      },
+      {
+        title: 'Switch Debouncing and User Input Control',
+        caption:
+          'Implemented button-controlled systems using external and internal pull-up resistors, debounced logic, state tracking, and directional LED shifting. This work emphasized reliable user input, clean state transitions, and practical troubleshooting of mechanical switch behavior.',
+      },
+      {
+        title: 'DC Motor Control and Speed Regulation',
+        caption:
+          'Controlled DC motors using an L293D motor driver, separate motor and logic power, on/off state control, direction switching, potentiometer-based speed adjustment, and LED status indicators for stopped, running, clockwise, and counterclockwise states.',
+      },
+      {
+        title: 'Stepper Motor Control with Interrupts',
+        caption:
+          'Identified stepper motor phase windings, created an 8-step control sequence, used interrupts for on/off and direction buttons, adjusted speed through analog input, and displayed real-time motor state with LED indicators.',
+      },
+      {
+        title: 'Serial Communication and Live Monitoring',
+        caption:
+          'Expanded motor control through Arduino Serial Monitor and PuTTY by printing motor status and processing typed commands such as RUN, STOP, CW, and CCW. This created a simple command-line control interface for electromechanical hardware.',
+      },
+      {
+        title: 'Displays, Keypad Input, and Sensor Integration',
+        caption:
+          'Developed seven-segment display control, 74HC595 shift-register display driving, keypad scanning without external libraries, and LCD temperature output using a DHT11 sensor. These labs combined low-level pin control with user interfaces and sensor feedback.',
+      },
+    ],
+    circuitHighlights: [
+      {
+        src: '/Lab12_DHT11_LCD_Temperature_Display.png',
+        title: 'Lab 12: DHT11 Temperature Display Circuit',
+        caption:
+          'This circuit was worth including because it shows a complete sensor-to-display embedded system: a DHT11 temperature sensor feeding an Arduino-controlled LCD output. It communicates practical sensor integration, LCD wiring, timing control, and real hardware debugging.',
+      },
+      {
+        src: '/Lab9_Serial_PuTTY_Monitor.png',
+        title: 'Lab 9: Serial Communication and PuTTY Monitoring',
+        caption:
+          'This lab was worth including because it shows the stepper motor system being monitored through a serial terminal. It demonstrates command-based hardware control, live motor status output, and a simple debugging interface beyond just blinking outputs.',
+      },
+      {
+        src: '/Final_Project_Final_Circuit.jpg',
+        title: 'Final Project: Arduino Solenoid Driver Circuit',
+        caption:
+          'This final circuit was worth including because it shows the full electromechanical driver system: Arduino control, breadboarded transistor switching, external 12V actuation hardware, wiring distribution, and the solenoid outputs used to physically press keyboard keys.',
+      },
+      {
+        src: '/Solenoid_Keypress_Closeup_Frame.jpg',
+        title: 'Final Project: Solenoid Keypress Mechanism',
+        caption:
+          'This frame was worth including because it clearly shows the mechanical side of the project: 3D-printed solenoid housings aligned over keyboard keys and mounted to a frame to convert software timing into physical key presses.',
+      },
+    ],
+
+    projectImages: [
+      {
+        src: '/Raspberry_Pi_Electronics_Roulette.png',
+        title: 'Raspberry Pi Electronics Experimentation',
+        caption:
+          'Electronics prototyping with Raspberry Pi hardware, breadboards, LEDs, and jumper wiring. This experiment was inspired by Glenn K. Lockwood’s “Learning Electronics with Roulette” guide and helped build familiarity with Linux-based embedded computing, wiring layouts, and hardware experimentation.',
+      },
+      {
+        src: '/Mechatronics_Labs_Final_Project.png',
+        title: 'Arduino Lab and Final Project Title Card',
+        caption:
+          'Composite title image showing Arduino wiring, breadboard electronics, motor hardware, and programming work used to represent the Mechatronics Labs & Final Project page.',
+      },
+    ],
+    finalProject: [
+      {
+        title: 'Electromechanical Automation Final Project',
+        caption:
+          'The final project used an Arduino-controlled solenoid system to physically actuate keyboard inputs. The team integrated solenoids, transistor switching circuits, 10K resistors, 1N4007 flyback diodes, a 12V power supply, a frame, 3D-printed solenoid housings, wiring, and timed software logic to automate repetitive in-game actions in Elden Ring.',
+      },
+      {
+        title: 'Engineering Problems Solved',
+        caption:
+          'The project required practical troubleshooting of overheating, solenoid alignment, keyboard shifting, wiring reliability, and mechanical stability. Improvements included zip-tie retention for actuator housings, intermediary breadboards, connector changes, and better stabilization of the keyboard/circuit assembly.',
+      },
+      {
+        title: 'Measured System Performance',
+        caption:
+          'The final presentation quantified the automation system at roughly 13,245 runes per bird kill in 25 seconds. With an estimated 90% success rate, the project calculated an effective output of approximately 1,716,552 runes per hour.',
+      },
+    ],
   },
   {
     slug: 'photonics-spectroscopy-research',
@@ -439,6 +555,124 @@ function CryostatProjectPage({ project }) {
   )
 }
 
+function MechatronicsProjectPage({ project }) {
+  return (
+    <main>
+      <nav className="nav">
+        <Link className="logo" to="/">
+          <img src="/rb-logo.png" alt="Roger Bos Logo" />
+        </Link>
+        <div className="navLinks">
+          <Link to="/#projects">Projects</Link>
+          <Link to="/#contact">Contact</Link>
+        </div>
+      </nav>
+
+      <section className={`projectHero projectHeroLarge mechatronicsHero ${project.accent}`}>
+        <div className="projectHeroText">
+          <h1>{project.title}</h1>
+          <p>{project.description}</p>
+          <div className="projectHeroActions">
+            <Link className="button" to="/">Back to Portfolio</Link>
+            <a className="button secondaryButton" href="#final-mechatronics-project">Final Project</a>
+          </div>
+        </div>
+        <div className="projectHeroImage projectHeroPhoto mechatronicsHeroPhoto">
+          <img src={project.image} alt={project.imageAlt} />
+          <p className="Group_Project_imageCaption">
+            Arduino-based lab work combining electronics, controls, wiring, and programming.
+          </p>
+        </div>
+      </section>
+
+      <section className="section projectIntroGrid">
+        <div>
+          <p className="eyebrow">Project Overview</p>
+          <h2>Embedded systems, circuits, sensors, motors, and controls.</h2>
+          <p className="leadText">{project.details}</p>
+          <p className="leadText">
+            The purpose of this page is to present the work as an engineering progression rather than a list of class assignments: starting with basic I/O and timing, moving into motor control and communication, and ending with a physical electromechanical automation system.
+          </p>
+        </div>
+        <div className="detailCard">
+          <div className="statGrid">
+            {project.stats.map((stat) => (
+              <div className="statCard" key={stat.label}>
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ProjectNarrativeSection eyebrow="Arduino / Embedded Systems" title="Hands-on experience using Arduino Uno hardware and the Arduino IDE.">
+        <p className="sectionIntro">
+          I am comfortable using Arduino Uno microcontrollers and the Arduino IDE programming environment to build, upload, test, and debug embedded control programs. Across the lab sequence, I worked with digital output, analog input, PWM, switch logic, interrupts, serial communication, display control, sensor input, and motor-control hardware.
+        </p>
+        <div className="skillPillGrid">
+          {project.skills.map((skill) => <span className="skillPill" key={skill}>{skill}</span>)}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Raspberry Pi Experience" title="Additional embedded computing work with Raspberry Pi hardware.">
+        <p className="sectionIntro">
+          I also have experience using Raspberry Pi systems for electronics experimentation and embedded computing. This work expanded beyond Arduino-style microcontroller control and introduced Linux-based hardware interfacing, wiring experimentation, peripheral communication, and more advanced prototyping workflows.
+        </p>
+        <p className="sectionIntro">
+          The Raspberry Pi electronics experiment shown below was developed with Glenn K. Lockwood’s <a className="inlineTextLink" href="https://blog.glennklockwood.com/2016/10/learning-electronics-with-roulette.html" target="_blank" rel="noreferrer">“Learning Electronics with Roulette”</a> as the primary reference guide.
+        </p>
+        <div className="imageGrid twoColumn">
+          {project.projectImages.map((item) => <ImageCard item={item} key={item.title} />)}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Featured Laboratory Work" title="The lab sequence built a strong base in hardware/software integration.">
+        <p className="sectionIntro">
+          The strongest labs are organized below by engineering skill instead of assignment number. Together, they show a progression from basic embedded I/O into motor control, communication, user interfaces, and sensor-based systems.
+        </p>
+        <div className="labCardGrid">
+          {project.featuredLabs.map((lab) => (
+            <article className="labCard" key={lab.title}>
+              <h3>{lab.title}</h3>
+              <p>{lab.caption}</p>
+            </article>
+          ))}
+        </div>
+      </ProjectNarrativeSection>
+
+
+      <ProjectNarrativeSection eyebrow="Circuit Evidence" title="Representative circuits and mechanisms worth showing on the portfolio page.">
+        <p className="sectionIntro">
+          I reviewed the available lab documents and selected the visuals that best communicate engineering value: sensor-to-display integration, serial monitoring, Arduino-driven solenoid circuitry, and the physical keypress mechanism from the final project.
+        </p>
+        <div className="imageGrid twoColumn">
+          {project.circuitHighlights.map((item) => <ImageCard item={item} key={item.title} />)}
+        </div>
+      </ProjectNarrativeSection>
+
+
+      <ProjectNarrativeSection eyebrow="Final Project" title="Electromechanical automation using solenoids, circuits, and timed control logic.">
+        <div id="final-mechatronics-project" className="finalProjectGrid">
+          {project.finalProject.map((item) => (
+            <article className="labCard finalProjectCard" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.caption}</p>
+            </article>
+          ))}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Engineering Value" title="What this project page is meant to communicate.">
+        <p className="sectionIntro">
+          This work demonstrates practical mechatronics capability: wiring real circuits, programming embedded devices, controlling motors and actuators, reading sensors, building simple user interfaces, and debugging hardware/software interactions. The overall experience connects mechanical engineering with electronics and software in the way real mechatronic systems are developed.
+        </p>
+      </ProjectNarrativeSection>
+    </main>
+  )
+}
+
+
 function ProjectPage() {
   const { slug } = useParams()
   const project = projects.find((item) => item.slug === slug)
@@ -460,6 +694,10 @@ function ProjectPage() {
 
   if (project.slug === 'cryostat-rail-mount') {
     return <CryostatProjectPage project={project} />
+  }
+
+  if (project.slug === 'mechatronics-labs-final-project') {
+    return <MechatronicsProjectPage project={project} />
   }
 
   return (
