@@ -914,8 +914,8 @@ h2 {
 }
 
 .mechatronicsOverviewImage img {
-  width: 88%;
-  height: 88%;
+  width: 75%;
+  height: 70%;
   object-fit: contain;
   object-position: center;
   display: block;

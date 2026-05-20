@@ -31,7 +31,7 @@ const cryostatProject = {
   ],
   designEvolution: [
     {
-      src: '/Roger_Concept_Sketch.png',
+      src: '/Concept_Sketch.png', /* Use Concept_Sketch */
       title: 'Initial Concept Sketch',
       caption:
         'This early concept communicated the major architecture: a powered scissor-lift style cart for coarse vertical positioning, extendable rail support, and the cryostat mounted upside down so the optical opening could interface with spectroscopy equipment.',
@@ -137,7 +137,7 @@ const projects = [
     description:
       'Embedded systems, motor control, sensors, displays, and electromechanical automation built through hands-on Arduino and Raspberry Pi projects.',
     details:
-      'This project collection documents hands-on mechatronics laboratories and a final electromechanical automation project using Arduino Uno microcontrollers, embedded C/C++ programming, breadboard prototyping, sensors, displays, DC motors, stepper motors, PWM control, serial communication, solenoid actuation, and hardware/software debugging.',
+      'This project page is a collection documenting my hands-on mechatronics labs, and my final mechatronics project. I have experience using Arduino Uno microcontrollers, embedded C/C++ programming, breadboard prototyping, sensors, displays, DC motors, stepper motors, PWM controls, serial communicatiors, solenoids, hardware/software debugging, and more to say the least.',
     stats: [
       { label: 'Platform Experience', value: 'Arduino + Pi' },
       { label: 'Lab Progression', value: '12 Labs' },
@@ -591,7 +591,7 @@ function MechatronicsProjectPage({ project }) {
           <h2>Embedded systems, circuits, sensors, motors, and controls.</h2>
           <p className="leadText">{project.details}</p>
           <p className="leadText">
-            The purpose of this page is to present the work as an engineering progression rather than a list of class assignments: starting with basic I/O and timing, moving into motor control and communication, and ending with a physical electromechanical automation system.
+            The purpose of this page is to present the work as an engineering progression rather than a list of class labs/assignments: starting with basic I/O and timing, moving into motor control and communication, and ending with my final mechatronics project which took nearly 8 weeks to fully complete.
           </p>
         </div>
         <div className="detailCard">
