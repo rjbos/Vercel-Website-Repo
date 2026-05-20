@@ -318,7 +318,7 @@ h2 {
 .projectType {
   color: #3f7f46 !important;
   font-weight: 800;
-  font-size: 0.9rem !important;
+  font-size: 1.08rem !important;
 }
 
 .projectCard h3,
@@ -569,14 +569,14 @@ h2 {
 }
 
 .projectCardBody {
-  padding: 34px;
+  padding: 30px 34px 34px;
 }
 
 .projectCardImage {
   position: relative;
   width: 100%;
   aspect-ratio: 1.75 / 1;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 26px 26px 0 0;
   background: #dce6d7;
 }
@@ -605,7 +605,8 @@ h2 {
   color: white !important;
   font-weight: 900;
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.18;
+  font-size: clamp(1.15rem, 1.65vw, 1.55rem) !important;
 }
 
 .projectHeroLarge {
@@ -692,7 +693,7 @@ h2 {
   margin-top: 8px;
   color: #52616b;
   font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 1.02rem;
 }
 
 .projectNarrativeSection {

@@ -31,7 +31,7 @@ const cryostatProject = {
   ],
   designEvolution: [
     {
-      src: '/Concept_Sketch.png',
+      src: '/Roger_Concept_Sketch.png',
       title: 'Initial Concept Sketch',
       caption:
         'This early concept communicated the major architecture: a powered scissor-lift style cart for coarse vertical positioning, extendable rail support, and the cryostat mounted upside down so the optical opening could interface with spectroscopy equipment.',
@@ -128,34 +128,64 @@ const cryostatProject = {
 const projects = [
   cryostatProject,
   {
-    slug: 'spectroscopy-research',
-    title: 'Spectroscopy Research',
-    type: 'Optical Systems / Research',
+    slug: 'mechatronics-labs-final-project',
+    title: 'Mechatronics Labs & Final Project',
+    type: 'Mechatronics / Controls',
+    accent: 'orange',
+    image: '/Mechatronics_Labs_Final_Project.png',
+    imageAlt: 'Mechatronics labs and final project title card showing Arduino wiring, breadboard LEDs, motor hardware, and code',
+    description:
+      'Integrated mechanical, electrical, and programming labs using Arduino, sensors, motors, LEDs, and control logic to create working mechatronic systems.',
+    details:
+      'This project page will document hands-on mechatronics labs and the final project, showing how electrical components, mechanical hardware, and code were integrated into working test setups.',
+  },
+  {
+    slug: 'photonics-spectroscopy-research',
+    title: 'Photonics / Spectroscopy Research',
+    type: 'Photonics / Spectroscopy',
     accent: 'blue',
+    image: '/Photonics_Spectroscopy_Title_Card.png',
+    imageAlt: 'Photonics and spectroscopy research title card',
     description:
       'Research focused on rare-earth-doped optical materials, visible to mid-IR spectroscopy, emission behavior, and laser applications.',
     details:
       'This research project explores optical material behavior through spectroscopy, including absorption, emission, fluorescence, and visible to mid-infrared analysis for future laser and optical system applications.',
   },
   {
-    slug: 'cad-modeling-fabrication',
-    title: 'CAD Modeling & Fabrication',
-    type: 'Mechanical Engineering',
+    slug: 'cad-models-drawings-fabrication',
+    title: 'CAD Models, Drawings & Fabrication',
+    type: 'Mechanical Design / Fabrication',
     accent: 'gray',
+    image: '/CAD_Models_Drawings_Fabrication_Title_Card.png',
+    imageAlt: 'CAD models drawings and fabrication title card',
     description:
       'SolidWorks assemblies, mechanical drawings, prototype development, and fabrication-focused engineering design.',
     details:
       'This project page highlights CAD modeling, mechanical drawings, manufacturing planning, and hands-on fabrication work. It includes design intent, tolerancing, part modeling, and assembly development.',
   },
   {
-    slug: 'mechatronics-electrical-projects',
-    title: 'Mechatronics & Electrical Projects',
-    type: 'Mechatronics',
-    accent: 'orange',
+    slug: 'personal-electronic-projects',
+    title: 'Personal Electronic Projects',
+    type: 'Electronics / Prototyping',
+    accent: 'green',
+    image: '/Personal_Electronic_Projects_Title_Card.png',
+    imageAlt: 'Personal electronic projects title card',
     description:
-      'Projects involving mechanical systems, electronics, controls, sensors, and integrated engineering problem solving.',
+      'Independent electronics projects involving circuits, sensors, embedded systems, wiring, troubleshooting, and functional prototypes.',
     details:
-      'This project area combines mechanical design with electronics, sensors, controls, and programming. The goal is to create working systems that sense, move, respond, or automate a useful task.',
+      'This project page will collect personal electronics builds and experiments, with emphasis on wiring, component selection, debugging, and turning small electronic concepts into working prototypes.',
+  },
+  {
+    slug: 'vex-robotics-hs-capstone-project',
+    title: 'VEX Robotics & HS Capstone Project',
+    type: 'Robotics / Engineering Education',
+    accent: 'orange',
+    image: '/VEX_Robotics_HS_Capstone_Title_Card.png',
+    imageAlt: 'VEX robotics and high school capstone project title card',
+    description:
+      'Robotics and early engineering projects focused on mechanisms, competition design, prototyping, and problem solving.',
+    details:
+      'This project page will cover robotics design experience from VEX and high school capstone work, including mechanism design, iterative prototyping, and early exposure to engineering problem solving.',
   },
 ]
 
@@ -264,7 +294,6 @@ function Home() {
               )}
               <div className="projectCardBody">
                 <p className="projectType">{project.type}</p>
-                <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <span className="projectLink">View Project <ArrowRight size={18} /></span>
               </div>
