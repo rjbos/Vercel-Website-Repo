@@ -891,7 +891,8 @@ h2 {
 }
 
 .mechatronicsHeroPhoto img {
-  margin-top: 0;
+    margin: auto;
+  /* margin-top: 0; */
 }
 
 
