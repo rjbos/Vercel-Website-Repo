@@ -1083,12 +1083,38 @@ h2 {
 
 /* Photonics cleanup fixes */
 .photonicsIntroGrid {
-  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 0.8fr);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
 }
 
 .photonicsIntroGrid h2 {
   max-width: 100%;
+}
+
+.photonicsOverviewCard {
+  width: 100%;
+}
+
+.photonicsStatGrid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+@media (max-width: 1000px) {
+  .photonicsStatGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .photonicsStatGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .publicationCard,
