@@ -261,11 +261,83 @@ const projects = [
     type: 'Photonics / Spectroscopy',
     accent: 'blue',
     image: '/Photonics_Spectroscopy_Title_Card.png',
-    imageAlt: 'Photonics and spectroscopy research title card',
+    imageAlt: 'DEVCOM ARL research group photo used as the Photonics and Spectroscopy Research title card',
     description:
-      'Research focused on rare-earth-doped optical materials, visible to mid-IR spectroscopy, emission behavior, and laser applications.',
+      'Comparative spectroscopy research on Dy³⁺-doped crystals and glasses for visible yellow and mid-infrared laser applications.',
     details:
-      'This research project explores optical material behavior through spectroscopy, including absorption, emission, fluorescence, and visible to mid-infrared analysis for future laser and optical system applications.',
+      'This project summarizes research conducted through DEVCOM Army Research Laboratory focused on rare-earth-doped optical materials, visible-to-mid-infrared spectroscopy, emission behavior, fluorescence lifetimes, and material evaluation for compact solid-state laser sources.',
+    stats: [
+      { label: 'Material Systems', value: '4 Hosts' },
+      { label: 'Visible Excitation', value: '450 nm' },
+      { label: 'Mid-IR Excitation', value: '905–910 nm' },
+      { label: 'Target Regions', value: '575–585 nm / 3–5 µm' },
+    ],
+    researchOutputs: [
+      {
+        src: '/SPIE_Paper_First_Page.png',
+        title: 'SPIE Conference Paper',
+        caption:
+          'The written paper presents a comparative spectroscopic study of Dy³⁺-doped low-phonon crystals and glasses for visible and mid-infrared laser applications. It includes background, experimental methods, absorption/transmission spectra, visible emission results, mid-IR measurements, and conclusions.',
+        link: '/Comparative_Spectroscopic_Study_Dy3_Paper.pdf',
+        linkText: 'Open Paper PDF',
+      },
+      {
+        src: '/SPIE_Poster_Preview.png',
+        title: 'SPIE Poster Presentation',
+        caption:
+          'The poster presents the research objective, experimental setup, material comparison, absorption spectra, yellow emission properties, mid-IR emission properties, and future work in a visual conference-poster format.',
+        link: '/SPIE_Poster_Roger_Bos.pptx',
+        linkText: 'Download Poster PPTX',
+      },
+    ],
+    researchVisuals: [
+      {
+        src: '/ARL_Optical_Table_Setup.png',
+        title: 'ARL Optical Table / Spectroscopy Setup',
+        caption:
+          'Research environment showing optical table alignment, laser excitation, mirrors, and spectroscopy hardware used during optical material characterization work at ARL.',
+      },
+      {
+        src: '/ARL_Mentor_Collaboration.png',
+        title: 'Research Mentorship and Collaboration',
+        caption:
+          'Research collaboration at ARL with Dr. Ei Ei Brown, supporting spectroscopy experiments, analysis, and professional research development.',
+      },
+      {
+        src: '/SPIE_Paper_Transmission_Absorption.png',
+        title: 'Transmission and Absorption Spectra',
+        caption:
+          'The paper compares optical transmission and absorption behavior for Dy:KPb₂Cl₅, Dy:BaF₂, Dy:Ga₂Ge₅S₁₃, and Dy:InF₃ to evaluate host-dependent optical quality and excitation bands.',
+      },
+      {
+        src: '/SPIE_Paper_Yellow_Emission_Lifetimes.png',
+        title: 'Yellow Emission and Lifetime Results',
+        caption:
+          'Visible emission spectra and lifetime measurements show strong host-dependent behavior, including dominant yellow emission near 575–585 nm and millisecond-scale decay behavior for selected hosts.',
+      },
+    ],
+    technicalHighlights: [
+      {
+        title: 'Research Objective',
+        caption:
+          'Compared Dy³⁺-doped low-phonon crystals and glasses to assess their potential for visible yellow and mid-infrared solid-state laser applications.',
+      },
+      {
+        title: 'Materials Studied',
+        caption:
+          'Investigated Dy:KPb₂Cl₅ and Dy:BaF₂ crystals, along with Dy:InF₃ and Dy:Ga₂Ge₅S₁₃ glasses, allowing comparison between crystalline and amorphous low-phonon hosts.',
+      },
+      {
+        title: 'Visible Emission Results',
+        caption:
+          'Blue excitation produced dominant yellow emission near 575–585 nm from the Dy³⁺ ⁴F₉/₂ → ⁶H₁₃/₂ transition, with Dy:KPC showing the strongest and most spectrally distinct yellow emission.',
+      },
+      {
+        title: 'Mid-IR Emission Results',
+        caption:
+          'Near-infrared excitation produced mid-IR emission in the 3–5 µm region for selected hosts, supporting interest in compact sources for sensing, remote detection, and defense-related optical systems.',
+      },
+    ],
   },
   {
     slug: 'cad-models-drawings-fabrication',
@@ -445,6 +517,23 @@ function ImageCard({ item }) {
         <p>{item.caption}</p>
       </figcaption>
     </figure>
+  )
+}
+
+function ResourceCard({ item }) {
+  return (
+    <article className="publicationCard">
+      <div className="publicationPreview">
+        <img src={item.src} alt={item.title} />
+      </div>
+      <div className="publicationBody">
+        <h3>{item.title}</h3>
+        <p>{item.caption}</p>
+        <a className="publicationButton" href={item.link} target="_blank" rel="noreferrer">
+          {item.linkText} <ArrowRight size={18} />
+        </a>
+      </div>
+    </article>
   )
 }
 
@@ -693,6 +782,105 @@ function MechatronicsProjectPage({ project }) {
 }
 
 
+function PhotonicsProjectPage({ project }) {
+  return (
+    <main>
+      <nav className="nav">
+        <Link className="logo" to="/">
+          <img src="/rb-logo.png" alt="Roger Bos Logo" />
+        </Link>
+        <div className="navLinks">
+          <Link to="/#projects">Projects</Link>
+          <Link to="/#contact">Contact</Link>
+        </div>
+      </nav>
+
+      <section className={`projectHero projectHeroLarge photonicsHero ${project.accent}`}>
+        <div className="projectHeroText">
+          <h1>{project.title}</h1>
+          <p>{project.description}</p>
+          <div className="projectHeroActions">
+            <Link className="button" to="/">Back to Portfolio</Link>
+            <a className="button secondaryButton" href="#research-outputs">Paper & Poster</a>
+          </div>
+        </div>
+        <div className="projectHeroImage projectHeroPhoto photonicsHeroPhoto">
+          <img src={project.image} alt={project.imageAlt} />
+          <p className="Group_Project_imageCaption">
+            DEVCOM Army Research Laboratory research experience focused on spectroscopy and optical materials.
+          </p>
+        </div>
+      </section>
+
+      <section className="section projectIntroGrid">
+        <div>
+          <p className="eyebrow">Project Overview</p>
+          <h2>Rare-earth spectroscopy for visible and mid-infrared laser applications.</h2>
+          <p className="leadText">{project.details}</p>
+          <p className="leadText">
+            The work centered on comparing dysprosium-doped low-phonon crystals and glasses to understand how host material selection affects transmission, absorption, visible yellow emission, mid-infrared emission, and fluorescence lifetime behavior.
+          </p>
+        </div>
+        <div className="detailCard photonicsOverviewCard">
+          <div className="statGrid photonicsStatGrid">
+            {project.stats.map((stat) => (
+              <div className="statCard photonicsStatCard" key={stat.label}>
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ProjectNarrativeSection eyebrow="Research Output" title="The research was developed into a SPIE paper and poster presentation.">
+        <p id="research-outputs" className="sectionIntro">
+          The project output included a formal SPIE conference paper and a conference-style poster summarizing the motivation, experimental setup, material systems, spectroscopic results, and future research direction.
+        </p>
+        <div className="publicationGrid">
+          {project.researchOutputs.map((item) => <ResourceCard item={item} key={item.title} />)}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Research Experience" title="Hands-on spectroscopy work at DEVCOM Army Research Laboratory.">
+        <p className="sectionIntro">
+          This research experience connected optical materials, laser excitation, spectroscopy instrumentation, and data analysis. It also provided professional exposure to laboratory research practices, technical communication, and collaboration with ARL scientists and external research partners.
+        </p>
+        <div className="imageGrid twoColumn">
+          {project.researchVisuals.slice(0, 2).map((item) => <ImageCard item={item} key={item.title} />)}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Technical Highlights" title="The project evaluated material behavior across visible and mid-infrared wavelengths.">
+        <div className="labCardGrid">
+          {project.technicalHighlights.map((item) => (
+            <article className="labCard photonicsHighlightCard" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.caption}</p>
+            </article>
+          ))}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Spectroscopic Results" title="Selected figures from the paper show the material comparison and emission behavior.">
+        <p className="sectionIntro">
+          The selected figures below communicate the major technical story: the materials were compared through transmission/absorption spectra, visible emission spectra, and fluorescence lifetime measurements to identify promising hosts for solid-state laser applications.
+        </p>
+        <div className="imageGrid twoColumn">
+          {project.researchVisuals.slice(2).map((item) => <ImageCard item={item} key={item.title} />)}
+        </div>
+      </ProjectNarrativeSection>
+
+      <ProjectNarrativeSection eyebrow="Engineering Value" title="What this project page is meant to communicate.">
+        <p className="sectionIntro">
+          This project demonstrates experience with photonics research, spectroscopy instrumentation, optical material characterization, technical writing, poster communication, and translating experimental results into engineering insight for future laser systems.
+        </p>
+      </ProjectNarrativeSection>
+    </main>
+  )
+}
+
+
 function ProjectPage() {
   const { slug } = useParams()
   const project = projects.find((item) => item.slug === slug)
@@ -718,6 +906,10 @@ function ProjectPage() {
 
   if (project.slug === 'mechatronics-labs-final-project') {
     return <MechatronicsProjectPage project={project} />
+  }
+
+  if (project.slug === 'photonics-spectroscopy-research') {
+    return <PhotonicsProjectPage project={project} />
   }
 
   return (

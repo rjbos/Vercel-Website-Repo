@@ -969,3 +969,111 @@ h2 {
   font-size: 1rem;
   line-height: 1.7;
 }
+
+/* =========================
+   Photonics / Spectroscopy Research Page
+   ========================= */
+.photonicsHeroPhoto img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.photonicsOverviewCard {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.photonicsStatGrid {
+  width: 100%;
+}
+
+.photonicsStatCard {
+  background: linear-gradient(145deg, #edf5e9, #e2edf5);
+}
+
+.publicationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.publicationCard {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid rgba(63, 127, 70, 0.13);
+  border-radius: 30px;
+  box-shadow:
+    0 12px 30px rgba(31, 41, 51, 0.05),
+    0 24px 70px rgba(31, 41, 51, 0.08);
+}
+
+.publicationPreview {
+  width: 100%;
+  height: 440px;
+  background:
+    radial-gradient(circle at top right, rgba(79, 127, 163, 0.12), transparent 36%),
+    #f5f7f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.publicationPreview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 14px 38px rgba(31, 41, 51, 0.10);
+}
+
+.publicationBody {
+  padding: 28px;
+}
+
+.publicationBody h3 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+  color: #1f2933;
+}
+
+.publicationBody p {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.68;
+  color: #52616b;
+}
+
+.publicationButton {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: #3f7f46;
+  color: white;
+  font-weight: 900;
+  box-shadow: 0 14px 35px rgba(63, 127, 70, 0.20);
+}
+
+.photonicsHighlightCard {
+  border-top: 6px solid #4f7fa3;
+}
+
+@media (max-width: 900px) {
+  .publicationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .publicationPreview {
+    height: auto;
+    min-height: 320px;
+  }
+}
