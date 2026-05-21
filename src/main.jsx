@@ -812,7 +812,7 @@ function PhotonicsProjectPage({ project }) {
         </div>
       </section>
 
-      <section className="section projectIntroGrid">
+      <section className="section projectIntroGrid photonicsIntroGrid">
         <div>
           <p className="eyebrow">Project Overview</p>
           <h2>Rare-earth spectroscopy for visible and mid-infrared laser applications.</h2>
