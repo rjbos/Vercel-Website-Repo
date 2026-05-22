@@ -260,7 +260,7 @@ const projects = [
     title: 'Photonics / Spectroscopy Research',
     type: 'Photonics / Spectroscopy',
     accent: 'blue',
-    image: '/Photonics_Spectroscopy_Title_Card.png',
+    image: '/ARL_Group_Photo.jpeg', /* ARL_Group_Photo.jpeg  Photonics_Spectroscopy_Title_Card.png */
     imageAlt: 'DEVCOM ARL research group photo used as the Photonics and Spectroscopy Research title card',
     description:
       'Comparative spectroscopy research on Dy³⁺-doped crystals and glasses for visible yellow and mid-infrared laser applications.',
