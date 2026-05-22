@@ -295,7 +295,7 @@ const projects = [
         linkText: 'Open Paper PDF',
       },
       {
-        src: '/SPIE_Poster_Preview.png',
+        src: '/SPIE_Poster_Card.jpg',
         title: 'SPIE Poster Presentation',
         caption:
           'The poster presents the research objective, experimental setup, material comparison, absorption spectra, yellow emission properties, mid-IR emission properties, and future work in a visual conference-poster format.',
