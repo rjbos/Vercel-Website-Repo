@@ -5,6 +5,10 @@ import { ArrowRight, Cpu, Wrench, Lightbulb, Mail, Linkedin, Github } from 'luci
 import './styles.css'
 import ScrollToTop from './ScrollToTop'
 
+/* =========================
+   Cryostat Overview Layout
+   ========================= */
+
 const cryostatProject = {
   slug: 'cryostat-rail-mount',
   title: 'Modular Optical Rail Mount for Cryostat Integration',
@@ -124,6 +128,10 @@ const cryostatProject = {
     },
   ],
 }
+
+/* =========================
+   Mechatronics Overview Layout
+   ========================= */
 
 const projects = [
   cryostatProject,
@@ -256,6 +264,11 @@ const projects = [
     ],
   },
   {
+
+  /* =========================
+  Photonics Overview Layout
+  ========================= */
+    
     slug: 'photonics-spectroscopy-research',
     title: 'Photonics / Spectroscopy Research',
     type: 'Photonics / Spectroscopy',
@@ -340,6 +353,11 @@ const projects = [
     ],
   },
   {
+
+  /* =========================
+  CAD Overview Layout
+  ========================= */
+
     slug: 'cad-models-drawings-fabrication',
     title: 'CAD Models, Drawings & Fabrication',
     type: 'Mechanical Design / Fabrication',
