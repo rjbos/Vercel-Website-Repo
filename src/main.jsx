@@ -813,22 +813,28 @@ function PhotonicsProjectPage({ project }) {
       </section>
 
       <section className="section projectIntroGrid photonicsIntroGrid">
-        <div>
+        <div className="photonicsIntroTitle">
           <p className="eyebrow">Project Overview</p>
           <h2>Rare-earth spectroscopy for visible and mid-infrared laser applications.</h2>
-          <p className="leadText">{project.details}</p>
-          <p className="leadText">
-            The work centered on comparing dysprosium-doped low-phonon crystals and glasses to understand how host material selection affects transmission, absorption, visible yellow emission, mid-infrared emission, and fluorescence lifetime behavior.
-          </p>
         </div>
-        <div className="detailCard photonicsOverviewCard">
-          <div className="statGrid photonicsStatGrid">
-            {project.stats.map((stat) => (
-              <div className="statCard photonicsStatCard" key={stat.label}>
-                <strong>{stat.value}</strong>
-                <span>{stat.label}</span>
-              </div>
-            ))}
+
+        <div className="photonicsIntroBody">
+          <div className="photonicsIntroText">
+            <p className="leadText">{project.details}</p>
+            <p className="leadText">
+              The work centered on comparing dysprosium-doped low-phonon crystals and glasses to understand how host material selection affects transmission, absorption, visible yellow emission, mid-infrared emission, and fluorescence lifetime behavior.
+            </p>
+          </div>
+
+          <div className="detailCard photonicsOverviewCard">
+            <div className="statGrid photonicsStatGrid">
+              {project.stats.map((stat) => (
+                <div className="statCard photonicsStatCard" key={stat.label}>
+                  <strong>{stat.value}</strong>
+                  <span>{stat.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

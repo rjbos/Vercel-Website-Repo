@@ -1083,38 +1083,12 @@ h2 {
 
 /* Photonics cleanup fixes */
 .photonicsIntroGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 0.8fr);
+  align-items: start;
 }
 
 .photonicsIntroGrid h2 {
   max-width: 100%;
-}
-
-.photonicsOverviewCard {
-  width: 100%;
-}
-
-.photonicsStatGrid {
-  width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 18px;
-}
-
-@media (max-width: 1000px) {
-  .photonicsStatGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 700px) {
-  .photonicsStatGrid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .publicationCard,
@@ -1127,4 +1101,68 @@ h2 {
 .publicationBody p {
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+
+/* =========================
+   Photonics Overview Layout Update
+   ========================= */
+.photonicsIntroGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.photonicsIntroTitle {
+  width: 100%;
+}
+
+.photonicsIntroTitle h2 {
+  max-width: 1400px;
+  margin-left: 0;
+}
+
+.photonicsIntroBody {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.75fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.photonicsIntroText .leadText:first-child {
+  margin-top: 0;
+}
+
+.photonicsOverviewCard {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.photonicsStatGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photonicsStatCard {
+  min-height: 150px;
+}
+
+@media (max-width: 1000px) {
+  .photonicsIntroBody {
+    grid-template-columns: 1fr;
+  }
+
+  .photonicsStatGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .photonicsStatGrid {
+    grid-template-columns: 1fr;
+  }
 }
