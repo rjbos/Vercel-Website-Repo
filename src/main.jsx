@@ -926,7 +926,7 @@ function AboutPage() {
       <section className="aboutPageHero">
         <div className="aboutPageText">
           <p className="eyebrow">About Roger Bos</p>
-          <h1>Mechanical engineer shaped by robotics, scouting, research, and hands-on design.</h1>
+          <h1>From Robotics to Engineering</h1>
           <p>
             I became interested in engineering through VEX Robotics, where I first saw how a rough idea could become a working machine through design, testing, failure, and iteration. Robotics gave me an early foundation in mechanisms, problem solving, teamwork, and the satisfaction of building something that physically works.
           </p>
