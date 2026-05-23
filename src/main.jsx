@@ -1095,10 +1095,10 @@ function ProjectsPage() {
       </nav>
 
       <section className="projectsPageHero">
-        <p className="eyebrow">Project Portfolio</p>
-        <h1>Mechanical design, photonics research, mechatronics, CAD, electronics, and robotics.</h1>
+        <p className="eyebrow"> </p>
+        <h1>Projects Page</h1>
         <p>
-          A focused collection of engineering work showing how I approach problem definition, prototyping, fabrication, analysis, testing, and technical communication.
+           
         </p>
       </section>
 
@@ -1106,7 +1106,7 @@ function ProjectsPage() {
         <div className="projectsPageHeader">
           <h2>All Projects</h2>
           <p>
-            These projects are organized to show both depth and range: customer-sponsored mechanical design, embedded systems, optical research, CAD/fabrication, personal electronics, and robotics foundations.
+            These are some of the most important projects I've completed throughout my life/early career. Many I could not have done by myself, so I'm extremly thankful to those who have helped me along my way, and have taught me invaluable life skills.
           </p>
         </div>
         <div className="projectGrid projectsPageGrid">
