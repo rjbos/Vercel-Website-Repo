@@ -1166,3 +1166,152 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================
+   About Page
+   ========================= */
+.aboutPageHero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.72fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+  padding: 72px 8% 84px;
+  background:
+    linear-gradient(rgba(245, 247, 244, 0.82), rgba(245, 247, 244, 0.96)),
+    radial-gradient(circle at top right, rgba(63, 127, 70, 0.16), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(79, 127, 163, 0.12), transparent 36%);
+}
+
+.aboutPageText h1 {
+  font-size: clamp(2.6rem, 5.4vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  max-width: 1050px;
+}
+
+.aboutPageText p:not(.eyebrow) {
+  max-width: 900px;
+  font-size: clamp(1.08rem, 1.35vw, 1.25rem);
+  line-height: 1.78;
+  color: #52616b;
+  margin: 26px 0 0;
+}
+
+.aboutPageActions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.aboutPagePhotoWrap {
+  align-self: start;
+}
+
+.aboutPagePhotoWrap img {
+  width: 100%;
+  max-height: 760px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 36px;
+  display: block;
+  box-shadow:
+    0 22px 70px rgba(31, 41, 51, 0.16),
+    0 42px 110px rgba(31, 41, 51, 0.10);
+}
+
+.aboutStorySection {
+  padding: 76px 8%;
+  background: #edf5e9;
+  border-top: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+.aboutStoryIntro h2 {
+  max-width: 1150px;
+  margin-left: 0;
+}
+
+.aboutStoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.aboutStoryCard {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(63, 127, 70, 0.13);
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow:
+    0 12px 30px rgba(31, 41, 51, 0.05),
+    0 24px 70px rgba(31, 41, 51, 0.08);
+}
+
+.aboutStoryCard h3 {
+  margin: 0 0 12px;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #1f2933;
+}
+
+.aboutStoryCard p {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.74;
+  color: #52616b;
+}
+
+.aboutExperienceBand {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 48px;
+  align-items: start;
+  padding: 76px 8%;
+  background: #f5f7f4;
+  border-top: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+.aboutExperienceBand h2 {
+  margin-left: 0;
+  max-width: 900px;
+}
+
+.aboutExperienceBand p:not(.eyebrow) {
+  margin: 0;
+  font-size: clamp(1.08rem, 1.35vw, 1.25rem);
+  line-height: 1.8;
+  color: #52616b;
+}
+
+@media (max-width: 1000px) {
+  .aboutPageHero,
+  .aboutExperienceBand {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutPagePhotoWrap img {
+    max-height: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutPageHero,
+  .aboutStorySection,
+  .aboutExperienceBand {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .aboutStoryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutPageActions .button {
+    width: 100%;
+    justify-content: center;
+  }
+}

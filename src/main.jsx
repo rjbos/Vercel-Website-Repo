@@ -404,7 +404,7 @@ function Home() {
         </Link>
 
         <div className="navLinks">
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
@@ -573,6 +573,7 @@ function CryostatProjectPage({ project }) {
           <img src="/rb-logo.png" alt="Roger Bos Logo" />
         </Link>
         <div className="navLinks">
+          <Link to="/about">About</Link>
           <Link to="/#projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
@@ -670,6 +671,7 @@ function MechatronicsProjectPage({ project }) {
           <img src="/rb-logo.png" alt="Roger Bos Logo" />
         </Link>
         <div className="navLinks">
+          <Link to="/about">About</Link>
           <Link to="/#projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
@@ -808,6 +810,7 @@ function PhotonicsProjectPage({ project }) {
           <img src="/rb-logo.png" alt="Roger Bos Logo" />
         </Link>
         <div className="navLinks">
+          <Link to="/about">About</Link>
           <Link to="/#projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
@@ -905,6 +908,95 @@ function PhotonicsProjectPage({ project }) {
 }
 
 
+
+function AboutPage() {
+  return (
+    <main>
+      <nav className="nav">
+        <Link className="logo" to="/">
+          <img src="/rb-logo.png" alt="Roger Bos Logo" />
+        </Link>
+        <div className="navLinks">
+          <Link to="/about">About</Link>
+          <Link to="/#projects">Projects</Link>
+          <Link to="/#contact">Contact</Link>
+        </div>
+      </nav>
+
+      <section className="aboutPageHero">
+        <div className="aboutPageText">
+          <p className="eyebrow">About Roger Bos</p>
+          <h1>Mechanical engineer shaped by robotics, scouting, research, and hands-on design.</h1>
+          <p>
+            I became interested in engineering through VEX Robotics, where I first saw how a rough idea could become a working machine through design, testing, failure, and iteration. Robotics gave me an early foundation in mechanisms, problem solving, teamwork, and the satisfaction of building something that physically works.
+          </p>
+          <p>
+            Boy Scouts and Sea Scouts also had a major influence on how I think. Earning Eagle Scout and serving in leadership roles taught me creativity, responsibility, planning, communication, and the value of solving practical problems with limited resources. Those experiences helped push me toward mechanical engineering because I wanted to create real systems, not just study theory.
+          </p>
+          <div className="aboutPageActions">
+            <Link className="button" to="/#projects">View My Projects <ArrowRight size={22} /></Link>
+            <a className="button secondaryButton" href="/Roger-Bos-Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+
+        <div className="aboutPagePhotoWrap">
+          <img src="/Roger_Bos_Engineering_Body_Shot.png" alt="Roger Bos in a lab environment" />
+          <p className="Group_Project_imageCaption">
+            Mechanical engineering, photonics research, CAD, fabrication, and mechatronics experience.
+          </p>
+        </div>
+      </section>
+
+      <section className="aboutStorySection">
+        <div className="aboutStoryIntro">
+          <p className="eyebrow">Engineering Path</p>
+          <h2>My background connects mechanical design with optical systems, fabrication, and embedded hardware.</h2>
+        </div>
+
+        <div className="aboutStoryGrid">
+          <article className="aboutStoryCard">
+            <h3>Robotics started the path</h3>
+            <p>
+              VEX Robotics introduced me to engineering as an iterative process: design a mechanism, build it, test it, identify what failed, and improve it. That early exposure developed my interest in mechanical systems, prototyping, and practical problem solving.
+            </p>
+          </article>
+
+          <article className="aboutStoryCard">
+            <h3>Scouting built creativity and leadership</h3>
+            <p>
+              Boy Scouts and Sea Scouts helped me develop discipline, creativity, outdoor problem solving, and leadership. The experience of earning Eagle Scout and Quartermaster shaped how I approach challenges: stay organized, take ownership, and keep working until the system functions correctly.
+            </p>
+          </article>
+
+          <article className="aboutStoryCard">
+            <h3>Research expanded my technical direction</h3>
+            <p>
+              Through my U.S. Army Research Laboratory internship, I worked with spectroscopy, laser systems, optical characterization, and MATLAB-based data analysis. That experience helped connect my mechanical engineering background to photonics, precision optical setups, and research-focused engineering.
+            </p>
+          </article>
+
+          <article className="aboutStoryCard">
+            <h3>Hands-on building keeps me grounded</h3>
+            <p>
+              My experience includes CAD modeling, fabrication, mechanical drafting, machining support, mechatronics labs, Arduino-based control systems, and my cryostat integration capstone. I am most interested in engineering work where design decisions become physical hardware.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="aboutExperienceBand">
+        <div>
+          <p className="eyebrow">Current Focus</p>
+          <h2>Opto-mechanical engineering, mechanical design, and systems that combine hardware, alignment, and testing.</h2>
+        </div>
+        <p>
+          I am building a portfolio around projects that show complete engineering progression: concept development, CAD, analysis, fabrication, assembly, testing, troubleshooting, and presentation. My goal is to keep developing as an engineer who can work across mechanical design, optical systems, research instrumentation, and mechatronics.
+        </p>
+      </section>
+    </main>
+  )
+}
+
 function ProjectPage() {
   const { slug } = useParams()
   const project = projects.find((item) => item.slug === slug)
@@ -941,6 +1033,7 @@ function ProjectPage() {
       <nav className="nav">
         <Link className="logo" to="/">Roger Bos</Link>
         <div className="navLinks">
+          <Link to="/about">About</Link>
           <Link to="/#projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
@@ -979,6 +1072,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/projects/:slug" element={<ProjectPage />} />
       </Routes>
     </BrowserRouter>
