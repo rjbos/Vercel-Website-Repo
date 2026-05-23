@@ -395,6 +395,101 @@ const projects = [
   },
 ]
 
+const engineeringJourney = [
+  {
+    year: '2016–2024',
+    title: 'VEX Robotics and early engineering curiosity',
+    label: 'Foundation',
+    text: 'My interest in engineering started through VEX Robotics, where I learned how mechanisms, iteration, teamwork, and competition design could turn rough ideas into working machines.',
+  },
+  {
+    year: '2008–2023',
+    title: 'Boy Scouts, Sea Scouts, and hands-on leadership',
+    label: 'Creativity + Leadership',
+    text: 'Boy Scouts and Sea Scouts helped build my creative problem-solving mindset through hands-on projects, outdoor challenges, responsibility, and leadership development as an Eagle Scout and Quartermaster.',
+  },
+  {
+    year: '2022–2026',
+    title: 'Norwich University Mechanical Engineering',
+    label: 'Engineering Education',
+    text: 'At Norwich, I developed a stronger technical base in mechanical design, CAD, analysis, fabrication, mathematics, controls, and disciplined engineering communication.',
+  },
+  {
+    year: 'Summer 2024',
+    title: 'Glasgow Caledonian University microgravity research',
+    label: 'Research Exposure',
+    text: 'Supported reduced-gravity research hardware preparation, test setup, data acquisition, and system verification while working in an international research environment.',
+  },
+  {
+    year: '2025',
+    title: 'Mechatronics automation projects',
+    label: 'Embedded Systems',
+    text: 'Built Arduino-based circuits, motor-control systems, sensor/display interfaces, Raspberry Pi experiments, and an electromechanical solenoid automation final project.',
+  },
+  {
+    year: 'Summer 2025',
+    title: 'DEVCOM Army Research Laboratory SCIP internship',
+    label: 'Photonics Research',
+    text: 'Conducted spectroscopy research on Dy³⁺-doped optical materials, worked with lasers and precision optical setups, analyzed data, and developed research for SPIE Photonics West.',
+  },
+  {
+    year: '2025–2026',
+    title: 'Cryostat integration capstone project',
+    label: 'Customer-Focused Design',
+    text: 'Designed and built a modular optical rail mount that transformed an unused ARL cryostat into a mobile 3-axis spectroscopy research platform.',
+  },
+]
+
+function EngineeringJourney() {
+  return (
+    <section className="engineeringJourneySection">
+      <div className="journeyHeader">
+        <p className="eyebrow">Engineering Journey</p>
+        <h2>How my experience developed into mechanical, optical, and mechatronics work.</h2>
+        <p>
+          This timeline shows the progression behind the projects on this site: from early robotics and hands-on leadership to research, fabrication, embedded systems, and customer-focused engineering design.
+        </p>
+      </div>
+
+      <div className="journeyTimeline">
+        {engineeringJourney.map((item) => (
+          <article className="journeyItem" key={`${item.year}-${item.title}`}>
+            <div className="journeyMarker" />
+            <div className="journeyCard">
+              <div className="journeyMeta">
+                <span>{item.year}</span>
+                <strong>{item.label}</strong>
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function ProjectCard({ project }) {
+  return (
+    <Link className={`projectCard clickableProject ${project.accent}`} to={`/projects/${project.slug}`} key={project.title}>
+      {project.image && (
+        <div className="projectCardImage">
+          <img src={project.image} alt={project.imageAlt || project.title} />
+          <div className="projectCardOverlay">
+            <p>{project.title}</p>
+          </div>
+        </div>
+      )}
+      <div className="projectCardBody">
+        <p className="projectType">{project.type}</p>
+        <p>{project.description}</p>
+        <span className="projectLink">View Project <ArrowRight size={18} /></span>
+      </div>
+    </Link>
+  )
+}
+
 function Home() {
   return (
     <main>
@@ -405,7 +500,7 @@ function Home() {
 
         <div className="navLinks">
           <Link to="/about">About</Link>
-          <a href="#projects">Projects</a>
+          <Link to="/projects">Projects</Link>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -484,26 +579,14 @@ function Home() {
         </section>
       </div>
 
+      <EngineeringJourney />
+
       <section id="projects" className="section">
         {/* <p className="eyebrow">Selected Work</p> */}
         <h2>Projects</h2>
         <div className="projectGrid">
           {projects.map((project) => (
-            <Link className={`projectCard clickableProject ${project.accent}`} to={`/projects/${project.slug}`} key={project.title}>
-              {project.image && (
-                <div className="projectCardImage">
-                  <img src={project.image} alt={project.imageAlt || project.title} />
-                  <div className="projectCardOverlay">
-                    <p>{project.title}</p>
-                  </div>
-                </div>
-              )}
-              <div className="projectCardBody">
-                <p className="projectType">{project.type}</p>
-                <p>{project.description}</p>
-                <span className="projectLink">View Project <ArrowRight size={18} /></span>
-              </div>
-            </Link>
+            <ProjectCard project={project} key={project.title} />
           ))}
         </div>
       </section>
@@ -574,7 +657,7 @@ function CryostatProjectPage({ project }) {
         </Link>
         <div className="navLinks">
           <Link to="/about">About</Link>
-          <Link to="/#projects">Projects</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
       </nav>
@@ -672,7 +755,7 @@ function MechatronicsProjectPage({ project }) {
         </Link>
         <div className="navLinks">
           <Link to="/about">About</Link>
-          <Link to="/#projects">Projects</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
       </nav>
@@ -811,7 +894,7 @@ function PhotonicsProjectPage({ project }) {
         </Link>
         <div className="navLinks">
           <Link to="/about">About</Link>
-          <Link to="/#projects">Projects</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
       </nav>
@@ -918,7 +1001,7 @@ function AboutPage() {
         </Link>
         <div className="navLinks">
           <Link to="/about">About</Link>
-          <Link to="/#projects">Projects</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
       </nav>
@@ -997,6 +1080,45 @@ function AboutPage() {
   )
 }
 
+function ProjectsPage() {
+  return (
+    <main>
+      <nav className="nav">
+        <Link className="logo" to="/">
+          <img src="/rb-logo.png" alt="Roger Bos Logo" />
+        </Link>
+        <div className="navLinks">
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/#contact">Contact</Link>
+        </div>
+      </nav>
+
+      <section className="projectsPageHero">
+        <p className="eyebrow">Project Portfolio</p>
+        <h1>Mechanical design, photonics research, mechatronics, CAD, electronics, and robotics.</h1>
+        <p>
+          A focused collection of engineering work showing how I approach problem definition, prototyping, fabrication, analysis, testing, and technical communication.
+        </p>
+      </section>
+
+      <section className="section projectsPageSection">
+        <div className="projectsPageHeader">
+          <h2>All Projects</h2>
+          <p>
+            These projects are organized to show both depth and range: customer-sponsored mechanical design, embedded systems, optical research, CAD/fabrication, personal electronics, and robotics foundations.
+          </p>
+        </div>
+        <div className="projectGrid projectsPageGrid">
+          {projects.map((project) => (
+            <ProjectCard project={project} key={project.title} />
+          ))}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function ProjectPage() {
   const { slug } = useParams()
   const project = projects.find((item) => item.slug === slug)
@@ -1034,7 +1156,7 @@ function ProjectPage() {
         <Link className="logo" to="/">Roger Bos</Link>
         <div className="navLinks">
           <Link to="/about">About</Link>
-          <Link to="/#projects">Projects</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="/#contact">Contact</Link>
         </div>
       </nav>
@@ -1073,6 +1195,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:slug" element={<ProjectPage />} />
       </Routes>
     </BrowserRouter>
