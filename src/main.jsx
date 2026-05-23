@@ -942,7 +942,7 @@ function AboutPage() {
         <div className="aboutPagePhotoWrap">
           <img src="/Roger_Bos_Engineering_Body_Shot3.png" alt="Roger Bos in a lab environment" />  
           <p className="Group_Project_imageCaption">
-            Mechanical engineering, photonics research, CAD, fabrication, and mechatronics experience.
+            ARL Base in Adelphi Maryland
           </p>
         </div>
       </section>
