@@ -411,7 +411,7 @@ const engineeringJourney = [
   {
     year: '2022 - 2026',
     title: 'Norwich University Mechanical Engineering',
-    label: 'Engineering Education',
+    label: 'Bachelor\'s Degree',
     text: 'At Norwich, I developed a stronger technical base in mechanical design, CAD, analysis, fabrication, mathematics, controls, and disciplined engineering communication.',
   },
   {
@@ -421,10 +421,16 @@ const engineeringJourney = [
     text: 'Supported reduced-gravity research hardware preparation, test setup, data acquisition, and system verification while working in an international research environment.',
   },
   {
-    year: '2025',
+    year: 'Fall & Spring 2025',
     title: 'Mechatronics automation projects',
     label: 'Embedded Systems',
     text: 'Built Arduino-based circuits, motor-control systems, sensor/display interfaces, Raspberry Pi experiments, and an electromechanical solenoid automation final project.',
+  },
+    {
+    year: 'Summer 2025',
+    title: 'Carlucci Welding & Fabrication Internship',
+    label: 'Customer-Focused Design',
+    text: 'Worked with customers to design and fabricate custom metal products, including welding, cutting, and finishing. Gained hands-on experience in metalworking and understanding customer requirements for practical engineering solutions.',
   },
   {
     year: 'Summer 2025',
@@ -433,7 +439,7 @@ const engineeringJourney = [
     text: 'Conducted spectroscopy research on Dy³⁺-doped optical materials, worked with lasers and precision optical setups, analyzed data, and developed research for SPIE Photonics West.',
   },
   {
-    year: '2025–2026',
+    year: '2025 - 2026',
     title: 'Cryostat integration capstone project',
     label: 'Customer-Focused Design',
     text: 'Designed and built a modular optical rail mount that transformed an unused ARL cryostat into a mobile 3-axis spectroscopy research platform.',
