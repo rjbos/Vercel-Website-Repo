@@ -453,30 +453,71 @@ const engineeringJourney = [
 ]
 
 function EngineeringJourney() {
+  const journeyScrollRef = React.useRef(null)
+
+  function scrollJourney(direction) {
+    const el = journeyScrollRef.current
+    if (!el) return
+
+    el.scrollBy({
+      left: direction * 420,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <section className="engineeringJourneySection">
       <div className="journeyHeader">
         <p className="eyebrow">Engineering Journey</p>
-        <h2>How my experience developed into mechanical, optical, and mechatronics work.</h2>
+
+        <h2>
+          How my experience developed into mechanical,
+          optical, and mechatronics work.
+        </h2>
+
         <p>
-          This timeline shows the progression behind the projects on this site: from early robotics and hands-on leadership to research, fabrication, embedded systems, and customer-focused engineering design.
+          This timeline shows the progression behind the projects on this site:
+          from early robotics and hands-on leadership to research,
+          fabrication, embedded systems, and customer-focused engineering design.
         </p>
       </div>
 
-      <div className="journeyTimeline">
-        {engineeringJourney.map((item) => (
-          <article className="journeyItem" key={`${item.year}-${item.title}`}>
-            <div className="journeyMarker" />
-            <div className="journeyCard">
-              <div className="journeyMeta">
-                <span>{item.year}</span>
-                <strong>{item.label}</strong>
+      <div className="journeyScrollWrap">
+        <button
+          className="journeyArrow journeyArrowLeft"
+          onClick={() => scrollJourney(-1)}
+        >
+          ←
+        </button>
+
+        <div className="journeyTimeline" ref={journeyScrollRef}>
+          {engineeringJourney.map((item) => (
+            <article
+              className="journeyItem"
+              key={`${item.year}-${item.title}`}
+            >
+              <div className="journeyMarker" />
+
+              <div className="journeyCard">
+                <div className="journeyMeta">
+                  <span>{item.year}</span>
+                  <strong>{item.label}</strong>
+                </div>
+
+                <h3>{item.title}</h3>
+
+                <p>{item.text}</p>
               </div>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </div>
-          </article>
-        ))}
+            </article>
+          ))}
+        </div>
+
+        <button
+          className="journeyArrow journeyArrowRight"
+          onClick={() => scrollJourney(1)}
+        >
+          →
+        </button>
       </div>
     </section>
   )

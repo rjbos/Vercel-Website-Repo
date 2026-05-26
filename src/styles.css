@@ -1443,6 +1443,88 @@ h2 {
   line-height: 1.68;
 }
 
+.journeyScrollWrap {
+  position: relative;
+}
+
+.journeyTimeline {
+  display: flex;
+  gap: 28px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 20px 12px 30px;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  cursor: grab;
+}
+
+.journeyTimeline::-webkit-scrollbar {
+  display: none;
+}
+
+.journeyTimeline:active {
+  cursor: grabbing;
+}
+
+.journeyItem {
+  flex: 0 0 340px;
+}
+
+.journeyArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 5;
+
+  width: 54px;
+  height: 54px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(63, 127, 70, 0.18);
+
+  background: rgba(255,255,255,0.96);
+
+  color: #3f7f46;
+
+  font-size: 1.9rem;
+  font-weight: 900;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 30px rgba(31, 41, 51, 0.10),
+    0 22px 65px rgba(31, 41, 51, 0.08);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.journeyArrow:hover {
+  transform: translateY(-50%) scale(1.06);
+
+  box-shadow:
+    0 18px 40px rgba(31, 41, 51, 0.12),
+    0 28px 75px rgba(31, 41, 51, 0.12);
+}
+
+.journeyArrowLeft {
+  left: -10px;
+}
+
+.journeyArrowRight {
+  right: -10px;
+}
+
 /* =========================
    Separate Projects Page
    ========================= */
