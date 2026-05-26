@@ -410,7 +410,7 @@ const engineeringJourney = [
   },
   {
     year: 'Spring 2022',
-    title: 'High School Robotics Capstone Internship Project',
+    title: 'HS Robotics Internship',
     label: 'Early Engineering Internship',
     text: 'Completed an early robotics and engineering internship/capstone experience that strengthened my interest in mechanical systems, prototyping, teamwork, and practical problem solving before college.',
   },
