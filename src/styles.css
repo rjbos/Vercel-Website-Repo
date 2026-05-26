@@ -1524,3 +1524,57 @@ h2 {
     padding-right: 6%;
   }
 }
+
+
+.journeyScrollWrap {
+  position: relative;
+}
+
+.journeyTimeline {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  cursor: grab;
+  scrollbar-width: none;
+}
+
+.journeyTimeline::-webkit-scrollbar {
+  display: none;
+}
+
+.journeyArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid rgba(63, 127, 70, 0.18);
+  background: white;
+  color: #3f7f46;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+  box-shadow:
+    0 12px 30px rgba(31, 41, 51, 0.10),
+    0 22px 65px rgba(31, 41, 51, 0.08);
+}
+
+.journeyArrow:hover {
+  transform: translateY(-50%) scale(1.06);
+}
+
+.journeyArrowLeft {
+  left: -22px;
+}
+
+.journeyArrowRight {
+  right: -22px;
+}
+

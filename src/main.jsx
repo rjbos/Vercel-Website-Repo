@@ -482,6 +482,44 @@ function EngineeringJourney() {
   )
 }
 
+const journeyScrollRef = React.useRef(null)
+
+function scrollJourney(direction) {
+  const el = journeyScrollRef.current
+  if (!el) return
+
+  el.scrollBy({
+    left: direction * 420,
+    behavior: 'smooth',
+  })
+}
+
+<div className="journeyScrollWrap">
+  <button className="journeyArrow journeyArrowLeft" onClick={() => scrollJourney(-1)}>
+    ←
+  </button>
+
+  <div className="journeyTimeline" ref={journeyScrollRef}>
+    {engineeringJourney.map((item) => (
+      <article className="journeyItem" key={`${item.year}-${item.title}`}>
+        <div className="journeyMarker" />
+        <div className="journeyCard">
+          <div className="journeyMeta">
+            <span>{item.year}</span>
+            <strong>{item.label}</strong>
+          </div>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <button className="journeyArrow journeyArrowRight" onClick={() => scrollJourney(1)}>
+    →
+  </button>
+</div>
+
 function ProjectCard({ project }) {
   return (
     <Link className={`projectCard clickableProject ${project.accent}`} to={`/projects/${project.slug}`} key={project.title}>
