@@ -397,7 +397,7 @@ const projects = [
 
 const engineeringJourney = [
   {
-    year: '2016–2024',
+    year: '2016 - 2022',
     title: 'VEX Robotics and early engineering curiosity',
     label: 'Foundation',
     text: 'My interest in engineering started through VEX Robotics, where I learned how mechanisms, iteration, teamwork, and competition design could turn rough ideas into working machines.',
