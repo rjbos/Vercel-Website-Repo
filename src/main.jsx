@@ -409,6 +409,12 @@ const engineeringJourney = [
     text: 'Boy Scouts and Sea Scouts helped build my creative problem-solving mindset through hands-on projects, outdoor challenges, responsibility, and leadership development as an Eagle Scout and Quartermaster.',
   },
   {
+    year: 'Spring 2022',
+    title: 'High School Robotics Capstone Internship Project',
+    label: 'Early Engineering Internship',
+    text: 'Completed an early robotics and engineering internship/capstone experience that strengthened my interest in mechanical systems, prototyping, teamwork, and practical problem solving before college.',
+  },
+  {
     year: '2022 - 2026',
     title: 'Norwich University Mechanical Engineering',
     label: 'Bachelor\'s Degree',
