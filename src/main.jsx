@@ -398,18 +398,18 @@ const projects = [
 const engineeringJourney = [
   {
     year: '2016 - 2022',
-    title: 'VEX Robotics and early engineering curiosity',
+    title: 'VEX Robotics', /* VEX Robotics and early engineering curiosity */
     label: 'Foundation',
-    text: 'My interest in engineering started through VEX Robotics, where I learned how mechanisms, iteration, teamwork, and competition design could turn rough ideas into working machines.',
+    text: 'My interest in engineering started through VEX Robotics, where I learned how mechanisms, iteration, teamwork, and competition design could turn rough ideas into working robots.',
   },
   {
     year: '2015 - 2024',
-    title: 'Boy Scouts, Sea Scouts, and hands-on leadership',
+    title: 'Boy Scouts',  /* Boy Scouts, and hands-on leadership */
     label: 'Creativity + Leadership',
     text: 'Boy Scouts and Sea Scouts helped build my creative problem-solving mindset through hands-on projects, outdoor challenges, responsibility, and leadership development as an Eagle Scout and Quartermaster.',
   },
   {
-    year: '2022–2026',
+    year: '2022 - 2026',
     title: 'Norwich University Mechanical Engineering',
     label: 'Engineering Education',
     text: 'At Norwich, I developed a stronger technical base in mechanical design, CAD, analysis, fabrication, mathematics, controls, and disciplined engineering communication.',
