@@ -403,7 +403,7 @@ const engineeringJourney = [
     text: 'My interest in engineering started through VEX Robotics, where I learned how mechanisms, iteration, teamwork, and competition design could turn rough ideas into working machines.',
   },
   {
-    year: '2008–2023',
+    year: '2015 - 2024',
     title: 'Boy Scouts, Sea Scouts, and hands-on leadership',
     label: 'Creativity + Leadership',
     text: 'Boy Scouts and Sea Scouts helped build my creative problem-solving mindset through hands-on projects, outdoor challenges, responsibility, and leadership development as an Eagle Scout and Quartermaster.',
