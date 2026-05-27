@@ -1229,7 +1229,7 @@ function ProjectPage() {
           <p className="eyebrow">Project Overview</p>
           <h2>Purpose, process, and engineering value.</h2>
         </div>
-        <div className="detailCard">
+        <div className="detailCard"> 
           <p>{project.details}</p>
           <p>
             Replace this placeholder text with your final project summary, design requirements,

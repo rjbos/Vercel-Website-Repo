@@ -1594,7 +1594,7 @@ h2 {
 @media (max-width: 800px) {
   .engineeringJourneySection {
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0; /* Update Section */
     border-radius: 0;
     padding-left: 6%;
     padding-right: 6%;
