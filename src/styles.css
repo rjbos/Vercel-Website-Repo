@@ -951,7 +951,7 @@ h2 {
 }
 
 .mechatronicsOverviewOverlay h3 {
-  margin: 0 0 10px;
+  margin: 0 0 9px; /* 10px */
 
   color: white;
 
@@ -1594,7 +1594,7 @@ h2 {
 @media (max-width: 800px) {
   .engineeringJourneySection {
     margin-left: 0;
-    margin-right: 0; /* Update */
+    margin-right: 0; /* Update*/
     border-radius: 0;
     padding-left: 6%;
     padding-right: 6%;
